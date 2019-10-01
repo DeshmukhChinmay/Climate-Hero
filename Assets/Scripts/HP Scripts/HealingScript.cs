@@ -8,12 +8,10 @@ public class HealingScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Healing: " + other);
         PlayerHPController playerHP = other.GetComponent<PlayerHPController>();
 
         if (playerHP != null)
         {
-            print("is trig");
             if (playerHP.GetHealth < playerHP.maxHealth)
             {
                 playerHP.ChangeHealth(healAmount);
