@@ -11,10 +11,10 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         // get all colliders in a circle radius
-        Collider2D[] colliders = new Collider2D[Physics2D.OverlapCircleAll(
-            transform.position + transform.right, damageRadius).Length];
-        colliders = Physics2D.OverlapCircleAll(
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(
             transform.position + transform.right, damageRadius);
+        //transform.right
+        //Debug.Log(transform.right);
 
         for (int i = 0; i < colliders.Length; i++)
         {

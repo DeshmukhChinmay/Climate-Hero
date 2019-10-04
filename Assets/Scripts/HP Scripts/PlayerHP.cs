@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerHPController : MonoBehaviour
+public class PlayerHP : MonoBehaviour
 {
     public int maxHealth = 10;
     int currentHealth;

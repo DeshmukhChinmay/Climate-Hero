@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        PlayerHPController hp = collision.gameObject.GetComponent<PlayerHPController>();
+        PlayerHP hp = collision.gameObject.GetComponent<PlayerHP>();
 
         if (hp != null)
         {
