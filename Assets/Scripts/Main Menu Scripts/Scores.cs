@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Scores : MonoBehaviour
 {
+    float timer;
+    int enemies, damage;
     // Start is called before the first frame update
     void Start()
     {
