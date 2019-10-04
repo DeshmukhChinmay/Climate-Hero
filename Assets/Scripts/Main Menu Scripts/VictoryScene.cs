@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class VictoryScene : MonoBehaviour
 {
 
-    [SerializeField] Text time, damage, enemies;
+    [SerializeField] TMP_Text time, damage, enemies;
     void Start()
     {
         Scores.Stop();
