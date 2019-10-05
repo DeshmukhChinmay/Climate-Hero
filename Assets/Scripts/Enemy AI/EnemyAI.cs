@@ -6,26 +6,25 @@ using Pathfinding;
 public class EnemyAI : MonoBehaviour
 {
 
-    public Transform target;
-
-    public float speed = 200f;
-    public float nextWaypointDistance = 3f;
+    public float speed = 1000f;
+    public float nextWayPointDistance = 2;
+    
+    Transform target = null;
 
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
 
     Seeker seeker;
-    Rigidbody2D rigidbody;
-
+    Rigidbody2D rigidBody;
 
     // Start is called before the first frame update
     void Start()
     {
         seeker = GetComponent<Seeker>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
 
-        InvokeRepeating("UpdatePath", 0f, 0.5f);
+        InvokeRepeating("UpdatePath", 0, 0.5f);
 
     }
 
@@ -33,31 +32,16 @@ public class EnemyAI : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (path == null)
-            return;
-
-        if (currentWaypoint >= path.vectorPath.Count) {
-            reachedEndOfPath = true;
-            return;
+        if (detectPlayer() == true) {
+            CalculatePath();
         } else {
-            reachedEndOfPath = false;
-        }
-
-        Vector2 direction = ((Vector2) path.vectorPath[currentWaypoint] - rigidbody.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        rigidbody.AddForce(force);
-
-        float distance = Vector2.Distance(rigidbody.position, path.vectorPath[currentWaypoint]);
-
-        if (distance < nextWaypointDistance) {
-            currentWaypoint++;
-        }
+            return;
+        } 
 
     }
 
-    void OnPathComplete(Path p) {
-
+    void OnPathComplete(Path p)
+    {
         if (!p.error) {
             path = p;
             currentWaypoint = 0;
@@ -67,8 +51,51 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath() {
         
-        if (seeker.IsDone()) {
-            seeker.StartPath(rigidbody.position, target.position, OnPathComplete);
+        if (seeker.IsDone() && target != null) {
+            seeker.StartPath(rigidBody.position, target.position, OnPathComplete);
+        }
+
+    }
+
+    bool detectPlayer() {
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2);
+        bool playerFound = false;
+
+        for (int i = 0; i < colliders.Length; i++) {
+            Debug.Log("There are some colliders detected");
+            if (colliders[i].tag == "Player") {
+                target = colliders[i].GetComponent<Transform>();
+                return true;
+            }
+        }
+
+        return playerFound;
+
+    }
+
+    void CalculatePath() {
+        
+        if (path == null) {
+            return;
+        }   
+
+        if (currentWaypoint >= path.vectorPath.Count) {
+            reachedEndOfPath = true;
+            return;
+        } else {
+            reachedEndOfPath = false;
+        }
+
+        Vector2 direction = ((Vector2) path.vectorPath[currentWaypoint] - rigidBody.position).normalized;
+        Vector2 force = direction * speed * Time.deltaTime;
+
+        rigidBody.AddForce(force);
+
+        float distance = Vector2.Distance(rigidBody.position, path.vectorPath[currentWaypoint]);
+
+        if (distance < nextWayPointDistance) {
+            currentWaypoint++;
         }
 
     }
