@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class PlayerHPController : MonoBehaviour
+public class EnemyHP : MonoBehaviour
 {
     public int maxHealth = 10;
     int currentHealth;
@@ -8,7 +10,7 @@ public class PlayerHPController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = 5;
+        currentHealth = 10;
     }
 
     public int GetHealth
@@ -24,6 +26,6 @@ public class PlayerHPController : MonoBehaviour
     {
         // change health by amount, cannot go below 0 and above maxHealth
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log("Health is: " + currentHealth + "/" + maxHealth);
+        Debug.Log("Enemy health is: " + currentHealth + "/" + maxHealth);
     }
 }

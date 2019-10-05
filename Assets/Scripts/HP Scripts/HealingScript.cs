@@ -8,7 +8,7 @@ public class HealingScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerHPController playerHP = other.GetComponent<PlayerHPController>();
+        PlayerHP playerHP = other.GetComponent<PlayerHP>();
 
         if (playerHP != null)
         {
