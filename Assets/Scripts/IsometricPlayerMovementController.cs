@@ -9,25 +9,58 @@ public class IsometricPlayerMovementController : MonoBehaviour
     IsometricCharacterRenderer isoRenderer;
 
     Rigidbody2D rbody;
+    Animator animator;
+
+    private bool playerMoving;
+    private Vector2 lastMove;
 
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
         isoRenderer = GetComponentInChildren<IsometricCharacterRenderer>();
+        //isoRenderer = GetComponent<IsometricCharacterRenderer>();
+        animator = GetComponentInChildren<Animator>();
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 currentPos = rbody.position;
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        Vector2 inputVector = new Vector2(horizontalInput, verticalInput);
-        inputVector = Vector2.ClampMagnitude(inputVector, 1);
-        Vector2 movement = inputVector * movementSpeed;
-        Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
-        isoRenderer.SetDirection(movement);
-        rbody.MovePosition(newPos);
+        /*
+        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f 
+            || Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f) {
+            Vector2 currentPos = rbody.position;
+            float horizontalInput = Input.GetAxis("Horizontal");
+            float verticalInput = Input.GetAxis("Vertical");
+            Vector2 inputVector = new Vector2(horizontalInput, verticalInput);
+            inputVector = Vector2.ClampMagnitude(inputVector, 1);
+            Vector2 movement = inputVector * movementSpeed;
+            Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
+            //isoRenderer.SetDirection(movement);
+            rbody.MovePosition(newPos);
+            playerMoving = true;
+        }
+        */
+        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        {
+            transform.Translate(new Vector3(
+                Input.GetAxisRaw("Horizontal") * movementSpeed * Time.deltaTime, 0f, 0f));
+            playerMoving = true;
+            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
+        }
+
+        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+        {
+            transform.Translate(new Vector3(
+                0f, Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime, 0f));
+            playerMoving = true;
+            lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
+        }
+
+        animator.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+        animator.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+        animator.SetFloat("LastMoveX", lastMove.x);
+        animator.SetFloat("LastMoveY", lastMove.y);
+        animator.SetBool("PlayerMoving", playerMoving);
     }
 }
