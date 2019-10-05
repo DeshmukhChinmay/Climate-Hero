@@ -11,8 +11,12 @@ public class IsometricPlayerMovementController : MonoBehaviour
     Rigidbody2D rbody;
     Animator animator;
 
-    private bool playerMoving;
+    private bool playerMoving = false;
     private Vector2 lastMove;
+
+    private bool playerAttacking;
+    private float attackTimeCounter;
+    public float attackTime;
 
     private void Awake()
     {
@@ -20,6 +24,10 @@ public class IsometricPlayerMovementController : MonoBehaviour
         isoRenderer = GetComponentInChildren<IsometricCharacterRenderer>();
         //isoRenderer = GetComponent<IsometricCharacterRenderer>();
         animator = GetComponentInChildren<Animator>();
+
+        lastMove = new Vector2(0f, -0.5f);
+        animator.SetFloat("LastMoveX", lastMove.x);
+        animator.SetFloat("LastMoveY", lastMove.y);
     }
 
 
@@ -41,26 +49,49 @@ public class IsometricPlayerMovementController : MonoBehaviour
             playerMoving = true;
         }
         */
-        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        playerMoving = false;
+
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal > 0.5f || horizontal < -0.5f)
         {
             transform.Translate(new Vector3(
-                Input.GetAxisRaw("Horizontal") * movementSpeed * Time.deltaTime, 0f, 0f));
+                horizontal * movementSpeed * Time.deltaTime, 0f, 0f));
             playerMoving = true;
-            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
+            lastMove = new Vector2(horizontal, 0f);
         }
 
-        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
+        if (vertical > 0.5f || vertical < -0.5f)
         {
             transform.Translate(new Vector3(
-                0f, Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime, 0f));
+                0f, vertical * movementSpeed * Time.deltaTime, 0f));
             playerMoving = true;
-            lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
+            lastMove = new Vector2(0f, vertical);
         }
 
-        animator.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+        if (Input.GetButtonDown("Fire1"))
+        {
+            playerAttacking = true;
+            attackTimeCounter = attackTime;
+            animator.SetBool("IsAttacking", true);
+
+        }
+
+        if (attackTimeCounter > 0)
+        {
+            attackTimeCounter -= Time.deltaTime;
+        }
+        else
+        {
+            playerAttacking = false;
+            animator.SetBool("IsAttacking", false);
+        }
+
+        animator.SetFloat("MoveX", horizontal);
+        animator.SetFloat("MoveY", vertical);
         animator.SetFloat("LastMoveX", lastMove.x);
         animator.SetFloat("LastMoveY", lastMove.y);
-        animator.SetBool("PlayerMoving", playerMoving);
+        animator.SetBool("IsMoving", playerMoving);
     }
 }
