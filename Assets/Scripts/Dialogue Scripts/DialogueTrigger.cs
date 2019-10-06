@@ -13,19 +13,22 @@ public class DialogueTrigger : MonoBehaviour
        
         // get all colliders in a circle radius
         Collider2D[] colliders = Physics2D.OverlapCircleAll(
-            transform.position + transform.right, damageRadius);
+            transform.position, damageRadius);
         bool IsLeft = true;
-        npc.SetBool("IsWitchComing", false);
-
+        npc.SetBool("IsPlayerComing", false);
+        Debug.Log("sssss");
         for (int i = 0; i < colliders.Length; i++)
         {
-            if (colliders[i].tag == "Witch")
+            Debug.Log("sth is here");
+            if (colliders[i].tag == "Player")
+
             {
+                Debug.Log("Player is here");
                 IsLeft = false;
-                npc.SetBool("IsWitchComing", true);
+                npc.SetBool("IsPlayerComing", true);
             }
-            // damage all enemies in the player's radius
-            if (Input.GetKeyUp(KeyCode.Tab) && colliders[i].tag == "Witch")
+           
+            if (Input.GetKeyUp(KeyCode.Tab) && colliders[i].tag == "Player")
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             }
@@ -34,8 +37,15 @@ public class DialogueTrigger : MonoBehaviour
         if (IsLeft)
         {
             FindObjectOfType<DialogueManager>().EndDialogue();
-            npc.SetBool("IsWitchComing", false);
+            npc.SetBool("IsPlayerComing", false);
         }
 
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Debug.Log("collision");
+        }
     }
 }
