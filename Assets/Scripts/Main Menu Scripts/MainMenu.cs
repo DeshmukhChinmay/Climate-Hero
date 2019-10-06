@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Starting Game!");
-        SceneManager.LoadScene("Intro");
+        SceneManager.LoadScene("Snowy_Area1");
     }
 
     public void QuitGame()
