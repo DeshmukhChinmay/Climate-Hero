@@ -16,14 +16,12 @@ public class DialogueTrigger : MonoBehaviour
             transform.position, damageRadius);
         bool IsLeft = true;
         npc.SetBool("IsPlayerComing", false);
-        Debug.Log("sssss");
+        
         for (int i = 0; i < colliders.Length; i++)
         {
-            Debug.Log("sth is here");
-            if (colliders[i].tag == "Player")
+            if (colliders[i].tag == "Player") { 
 
-            {
-                Debug.Log("Player is here");
+            
                 IsLeft = false;
                 npc.SetBool("IsPlayerComing", true);
             }

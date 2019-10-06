@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     //public Animator animator;
     public GameObject dialoguebox;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        //animator.SetBool("IsOpen", true);
-        Debug.Log("here we are");
         dialoguebox.SetActive(true);
 
         sentences.Clear();
@@ -52,8 +51,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-      
-        //Debug.Log(sentence.Substring(9));
         nameText.text = sentence.Substring(0,8);
         dialogueText.text = sentence.Substring(9);
     }
@@ -61,6 +58,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
+
         dialoguebox.SetActive(false);
     }
 }

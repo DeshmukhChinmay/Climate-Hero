@@ -3,6 +3,7 @@
 public class PlayerHP : MonoBehaviour
 {
     public int maxHealth = 10;
+    
     int currentHealth;
     public int health;
     // Start is called before the first frame update
@@ -10,6 +11,7 @@ public class PlayerHP : MonoBehaviour
     {
         currentHealth = 5;
         health = currentHealth;
+        
     }
 
     public int GetHealth
@@ -19,6 +21,9 @@ public class PlayerHP : MonoBehaviour
         }
         
     }
+
+ 
+
 
     // damage or heal a certain amount of health
     public void ChangeHealth(int amount)
