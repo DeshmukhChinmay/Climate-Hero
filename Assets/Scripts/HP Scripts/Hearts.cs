@@ -5,12 +5,29 @@ using UnityEngine.UI;
 
 public class Hearts : MonoBehaviour
 {
+    //public int health;
+    //public int numberOfHearts=2;
+    //public Image[] hearts;
+    //public Sprite heart;
+    //void Update()
+    //{
+    //    for (int i=0; i < hearts.Length; i++) {
+    //        if (i < numberOfHearts)
+    //        {
+    //            hearts[i].enabled = true;
+    //        }
+    //        else {
+    //            hearts[i].enabled = false;
+    //        }
+    //    }
+
+    //}
     [SerializeField] private Sprite heartSprite;
     private List<HeartImage> hiList;
     private Hearts h;
-    //private PlayerHP ph;
+    private PlayerHP ph;
     //public int health;
-    public int numberOfHearts=10;
+    public int numberOfHearts;
     private void Awake()
     {
         hiList = new List<HeartImage>();
@@ -46,7 +63,6 @@ public class Hearts : MonoBehaviour
             }
             else
             {
-               // Debug.Log(hiList.Capacity);
                 hiList[i].Set(0);
             }
         }
