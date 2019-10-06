@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         //animator.SetBool("IsOpen", true);
+        Debug.Log("here we are");
         dialoguebox.SetActive(true);
 
         sentences.Clear();
