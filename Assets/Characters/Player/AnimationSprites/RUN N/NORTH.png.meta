@@ -1,28 +1,7 @@
 fileFormatVersion: 2
-guid: 8ea432ea39711c148a9a5e93517c5162
+guid: 40798a24e2cd6c5448afefab2ca9e870
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8529882284671215103
-    second: NORTH_0
-  - first:
-      213: 3812905772343929645
-    second: NORTH_1
-  - first:
-      213: 42939834531477606
-    second: NORTH_2
-  - first:
-      213: 64858303741684744
-    second: NORTH_3
-  - first:
-      213: -898391853362068412
-    second: NORTH_4
-  - first:
-      213: -5261641539540194759
-    second: NORTH_5
-  - first:
-      213: 7191936348575142301
-    second: NORTH_6
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -61,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -91,168 +70,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: NORTH_0
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 73
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38579bc6953c9074e9540940ffbb9034
-      internalID: 8529882284671215103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NORTH_1
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 73
-        width: 20
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4842b24a294274246a668013fb653ae8
-      internalID: 3812905772343929645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NORTH_2
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 73
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35ea0e07d09abb042951015669134f10
-      internalID: 42939834531477606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NORTH_3
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 73
-        width: 20
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de25a639edb517d45b4d01c8b00dbf1b
-      internalID: 64858303741684744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NORTH_4
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 22
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c226554a13bbeb4ba7c9fa6ef83f396
-      internalID: -898391853362068412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NORTH_5
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 22
-        width: 20
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75502c96ef4dc4644922c97ab991766a
-      internalID: -5261641539540194759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NORTH_6
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 22
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 146a99c4cd1fab34aba7349d61fb4998
-      internalID: 7191936348575142301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

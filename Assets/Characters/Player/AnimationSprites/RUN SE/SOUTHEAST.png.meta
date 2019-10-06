@@ -1,34 +1,7 @@
 fileFormatVersion: 2
-guid: b256bab446febf74cbac2d269f5b0a0f
+guid: 6dd5b6ec923c01945ab9ceddcd599cac
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 912485655870156146
-    second: SOUTHEAST_0
-  - first:
-      213: 4811518997851479889
-    second: SOUTHEAST_1
-  - first:
-      213: 8120490301644317799
-    second: SOUTHEAST_2
-  - first:
-      213: 5332178682648603746
-    second: SOUTHEAST_3
-  - first:
-      213: 2717394222974988540
-    second: SOUTHEAST_4
-  - first:
-      213: -8509227612745462839
-    second: SOUTHEAST_5
-  - first:
-      213: 2049470770323462296
-    second: SOUTHEAST_6
-  - first:
-      213: -7290865251249008129
-    second: SOUTHEAST_7
-  - first:
-      213: -7154416082665758771
-    second: SOUTHEAST_8
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -67,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,210 +70,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SOUTHEAST_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 67
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5150fb5e14620784c874cc3a7c443006
-      internalID: 912485655870156146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 66
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8d1858b473da3745b7aa3d252cd5fab
-      internalID: 4811518997851479889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_2
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 68
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45b0ebe2633d5e944af46d231d0347b2
-      internalID: 8120490301644317799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_3
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 67
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fcf821159e538a468b33f8f7f898ea4
-      internalID: 5332178682648603746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_4
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 66
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd31b442a31b3144aa6abd7711a99a06
-      internalID: 2717394222974988540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_5
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 68
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2621d9f712b95c42adddd8fa0488ebf
-      internalID: -8509227612745462839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_6
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 19
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08e9c50265b97294192982e80d6b0b56
-      internalID: 2049470770323462296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_7
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 19
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 216e2cd6e64c98b4d805c5ce0b753591
-      internalID: -7290865251249008129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SOUTHEAST_8
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 19
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b70db7528cd19c47ad2e4adb438803d
-      internalID: -7154416082665758771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
