@@ -8,6 +8,6 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 - Kevin Xu - enthye - kxu015
 - Kungeng Wu - Kwu849 - kwu849
 - Lisa Wang - zwan940 - zwan940
-- Terence Qu - Terenco12345
+- Terence Qu - Terenco12345 - tqu593
 
 
