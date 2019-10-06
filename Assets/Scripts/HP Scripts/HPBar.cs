@@ -8,7 +8,9 @@ public class HPBar : MonoBehaviour
     public int maxhealth=10;
     private void Start()
     {
-        GameObject enemy = GameObject.Find("Boar (1)");
+        var parent = this.transform.parent;
+        var p1 = parent.transform.parent;
+        var enemy = p1.transform.parent;
         EnemyHP enemyScript = enemy.GetComponent<EnemyHP>();
         health = enemyScript.health;
         Debug.Log("================Health is: " + health + "/" + maxhealth);
@@ -18,7 +20,9 @@ public class HPBar : MonoBehaviour
         // Update is called once per frame
         void Update()
     {
-        GameObject enemy = GameObject.Find("Boar (1)");
+        var parent = this.transform.parent;
+        var p1 = parent.transform.parent;
+        var enemy = p1.transform.parent;
         EnemyHP enemyScript = enemy.GetComponent<EnemyHP>();
         health = enemyScript.health;
         Debug.Log("================Health is===============: " + health + "/" + maxhealth);
