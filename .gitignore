@@ -50,3 +50,6 @@ crashlytics-build.properties
 
 # Mac DStore
 .DS_Store
+
+#Unity Version Garbage
+ProjectSettings/ProjectVersion.txt
