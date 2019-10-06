@@ -267,8 +267,8 @@ MonoBehaviour:
     sentences:
     - "O: You look worried __. What\u2019s bothering you?\n"
     - 'C: I am worried about our town Mr. __'
-    - 'C: The sea water is rising so rapidly and the ice caps from the mountains are
-      melting as well.'
+    - 'C: The sea water is rising so rapidly and the ice caps from the mountains
+      are melting as well.'
     - 'C: Soon all of our town will go underwater.'
     - "C:Even if we move to another place, my polar bears won\u2019t be able to survive."
     - C:Why are the sea levels rising?
@@ -306,8 +306,8 @@ MonoBehaviour:
       for me.
 
 '
-    - 'O: I know you have the potential to destroy those batteries and enter the factory
-      to stop the harm that the MegaCorp is causing.
+    - 'O: I know you have the potential to destroy those batteries and enter the
+      factory to stop the harm that the MegaCorp is causing.
 
 '
     - 'O: Here have my sword.'
@@ -518,7 +518,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.2, y: 0.23}
   m_EdgeRadius: 0
 --- !u!114 &50263219
 MonoBehaviour:
@@ -1092,7 +1092,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.52, y: 0.21, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children: [{fileID: 471269800}]
+  m_Children:
+  - {fileID: 471269800}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34505,6 +34506,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f7e8edd32ce979449dbf6d7d672b891, type: 3}
+--- !u!1 &479443754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+    type: 3}
+  m_PrefabInstance: {fileID: 7883654486357441916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &479443759
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479443754}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.24, y: 0.51}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.35, y: 0.85}
+  m_EdgeRadius: 0
 --- !u!1 &487014130
 GameObject:
   m_ObjectHideFlags: 0
@@ -55188,7 +55221,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.431, y: -0.276, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children: [{fileID: 1595818857}]
+  m_Children:
+  - {fileID: 1595818857}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55825,7 +55859,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.62, y: -0.85, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children: [{fileID: 1440714265}]
+  m_Children:
+  - {fileID: 1440714265}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
