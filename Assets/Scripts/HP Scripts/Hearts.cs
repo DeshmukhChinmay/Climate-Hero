@@ -52,7 +52,7 @@ public class Hearts : MonoBehaviour
     }
     void Update()
     {
-        numberOfHearts = ph.getHealth();
+        numberOfHearts = ph.GetHealth;
         for (int i = 0; i < hiList.Capacity; i++)
         {
             if (i < numberOfHearts)

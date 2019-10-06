@@ -13,10 +13,10 @@ public class PlayerHP : MonoBehaviour
 
     public int GetHealth
     {
-        get
-        {
+        get {
             return currentHealth;
         }
+        
     }
 
     // damage or heal a certain amount of health
