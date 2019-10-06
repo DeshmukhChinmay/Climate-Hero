@@ -36,24 +36,26 @@ public class Hearts : MonoBehaviour
 
     private void Start()
     {
-        HeartImage image1=createHeartImage(new Vector2(-235, 120));
-        HeartImage image2=createHeartImage(new Vector2(-225, 120));
-        HeartImage image3=createHeartImage(new Vector2(-215, 120));
-        HeartImage image4=createHeartImage(new Vector2(-205, 120));
-        HeartImage image5=createHeartImage(new Vector2(-195, 120));
-        HeartImage image6=createHeartImage(new Vector2(-235, 110));
-        HeartImage image7=createHeartImage(new Vector2(-225, 110));
-        HeartImage image8=createHeartImage(new Vector2(-215, 110));
-        HeartImage image9=createHeartImage(new Vector2(-205, 110));
-        HeartImage image10=createHeartImage(new Vector2(-195, 110));
+        GameObject thePlayer = GameObject.Find("PlayerCollider");
+        PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
+        numberOfHearts = playerScript.health;
+        // int health = ph.GetHealth;
+        HeartImage image1 = createHeartImage(new Vector2(-385, 180));
+        HeartImage image2 = createHeartImage(new Vector2(-375, 180));
+        HeartImage image3 = createHeartImage(new Vector2(-365, 180));
+        HeartImage image4 = createHeartImage(new Vector2(-355, 180));
+        HeartImage image5 = createHeartImage(new Vector2(-345, 180));
+        HeartImage image6 = createHeartImage(new Vector2(-385, 170));
+        HeartImage image7 = createHeartImage(new Vector2(-375, 170));
+        HeartImage image8 = createHeartImage(new Vector2(-365, 170));
+        HeartImage image9 = createHeartImage(new Vector2(-355, 170));
+        HeartImage image10 = createHeartImage(new Vector2(-345, 170));
     }
-    public void setCurrentHealth(int c) {
-        numberOfHearts = c;
-    }
-    void Update()
-    {
-        numberOfHearts = ph.GetHealth;
-        for (int i = 0; i < hiList.Capacity; i++)
+    public void Update()
+    {      GameObject thePlayer = GameObject.Find("PlayerCollider");
+        PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
+        numberOfHearts = playerScript.health;
+        for (int i = 0; i < 10; i++)
         {
             if (i < numberOfHearts)
             {
