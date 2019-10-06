@@ -50,3 +50,6 @@ crashlytics-build.properties
 
 # Mac DStore
 .DS_Store
+
+#Unity project version
+ProjectSettings/ProjectVersion.txt

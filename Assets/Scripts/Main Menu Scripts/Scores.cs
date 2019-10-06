@@ -19,9 +19,9 @@ public sealed class Scores : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (stopTimer){
+        if (!stopTimer){
             timer += 1 * Time.deltaTime;
-            print(timer);
+            //print(timer);
         }
     }
 
