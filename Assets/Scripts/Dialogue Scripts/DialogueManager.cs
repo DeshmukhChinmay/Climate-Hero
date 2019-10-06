@@ -9,20 +9,20 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences = new Queue<string>();
     public Text nameText;
     public Text dialogueText;
-    public Animator animator;
+    //public Animator animator;
+    public GameObject dialoguebox;
 
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
+        dialoguebox.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        animator.SetBool("IsOpen", true);
-
-        Debug.Log("starting conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
+        //animator.SetBool("IsOpen", true);
+        dialoguebox.SetActive(true);
 
         sentences.Clear();
 
@@ -34,8 +34,16 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-    public void DisplayNextSentence()
+    public void Update()
     {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
+    }
+
+    public void DisplayNextSentence()
+    { 
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -43,13 +51,15 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
-        dialogueText.text = sentence;
+      
+        //Debug.Log(sentence.Substring(9));
+        nameText.text = sentence.Substring(0,8);
+        dialogueText.text = sentence.Substring(9);
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
-        Debug.Log("End of conversation");
-        animator.SetBool("IsOpen", false);
+        //animator.SetBool("IsOpen", false);
+        dialoguebox.SetActive(false);
     }
 }
