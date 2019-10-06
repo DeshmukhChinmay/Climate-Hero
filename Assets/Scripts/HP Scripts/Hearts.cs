@@ -22,7 +22,6 @@ public class Hearts : MonoBehaviour
         GameObject thePlayer = GameObject.Find("PlayerCollider");
         PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         numberOfHearts = playerScript.health;
-        Debug.Log("Heart is:========================== " + playerScript.health);
         // int health = ph.GetHealth;
         HeartImage image1 = createHeartImage(new Vector2(-385, 180));
         HeartImage image2 = createHeartImage(new Vector2(-375, 180));
@@ -39,11 +38,6 @@ public class Hearts : MonoBehaviour
     {      GameObject thePlayer = GameObject.Find("PlayerCollider");
         PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         numberOfHearts = playerScript.health;
-        //GameObject thePlayer = GameObject.Find("ThePlayer");
-        //PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
-        //numberOfHearts = playerScript.health;
- 
-        //numberOfHearts = ph.getHealth();
         for (int i = 0; i < 10; i++)
         {
             if (i < numberOfHearts)
