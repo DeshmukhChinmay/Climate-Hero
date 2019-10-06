@@ -15,6 +15,7 @@ public class SwordDamage : MonoBehaviour
             if (collision.GetComponent<EnemyHP>().GetHealth <= 0)
             {
                 Destroy(collision.gameObject);
+                Scores.increaseEnemiesDefeated();
             }
 
         }
