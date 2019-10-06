@@ -7,6 +7,7 @@ public class EnemyHP : MonoBehaviour
     public int maxHealth = 10;
     int currentHealth;
     public int health;
+    public int attactAmount = -1;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,16 @@ public class EnemyHP : MonoBehaviour
         {
             return currentHealth;
         }
+    }
+
+    public void onTriggerEnter2D(Collider2D collision)
+    {
+            if(collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerHP>().ChangeHealth(-1);
+        }
+            
+        
     }
 
     // damage or heal a certain amount of health
