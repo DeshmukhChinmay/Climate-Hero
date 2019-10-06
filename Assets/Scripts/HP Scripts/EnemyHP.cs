@@ -8,6 +8,7 @@ public class EnemyHP : MonoBehaviour
     int currentHealth;
     public int health;
     public int attactAmount = -1;
+    float timer;
 
     // Start is called before the first frame update
     void Start()
@@ -38,8 +39,25 @@ public class EnemyHP : MonoBehaviour
     public void ChangeHealth(int amount)
     {
         // change health by amount, cannot go below 0 and above maxHealth
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+      
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         health = currentHealth;
+        
         Debug.Log("Enemy health is: " + currentHealth + "/" + maxHealth);
+    }
+
+    private void Update()
+    {
+        if (gameObject.GetComponent<SpriteRenderer>().color == Color.red)
+        {
+            timer += Time.deltaTime;
+            if (timer > 0.4f)
+            {
+                gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                timer = 0;
+            }
+        }
+
     }
 }
