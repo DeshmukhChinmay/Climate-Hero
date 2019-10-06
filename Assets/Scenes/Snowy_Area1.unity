@@ -504,7 +504,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -534,6 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  attactAmount: -1
 --- !u!212 &50263220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1011,6 +1012,7 @@ GameObject:
   - component: {fileID: 217292185}
   - component: {fileID: 217292188}
   - component: {fileID: 217292189}
+  - component: {fileID: 217292190}
   m_Layer: 0
   m_Name: Boar
   m_TagString: Enemy
@@ -1032,6 +1034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  attactAmount: -1
 --- !u!212 &217292186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1107,7 +1110,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1144,6 +1147,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &217292190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217292184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550fd69d9375ed046816fb23f075c30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attactAmount: -1
 --- !u!1001 &218643862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34534,10 +34550,23 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 0.85}
+  m_Size: {x: 0.3, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &479443760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479443754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efafabaea07e664581cb1a15f1d5c3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attactAmount: -1
 --- !u!1 &487014130
 GameObject:
   m_ObjectHideFlags: 0
@@ -54713,6 +54742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  attactAmount: -1
 --- !u!114 &1750397024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54885,6 +54915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  attactAmount: -1
 --- !u!212 &1750397032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55131,7 +55162,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -55161,6 +55192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  attactAmount: -1
 --- !u!212 &1765490760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55769,7 +55801,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -55799,6 +55831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  attactAmount: -1
 --- !u!212 &1955655045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57174,17 +57207,32 @@ PrefabInstance:
     - target: {fileID: 4841480791171768185, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841480791171768185, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.6395138
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4841480791171768185, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_Radius
-      value: 1.1395143
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480791171768185, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480791171768185, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480791171768185, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841480791730514025, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
