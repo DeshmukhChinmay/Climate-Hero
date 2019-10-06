@@ -16,27 +16,25 @@ public class DialogueTrigger2 : MonoBehaviour
             transform.position, damageRadius);
         bool IsLeft = true;
         npc.SetBool("IsPlayerComing", false);
-        Debug.Log("Dog");
         for (int i = 0; i < colliders.Length; i++)
         {
-            Debug.Log("Dog is here");
             if (colliders[i].tag == "Player")
 
             {
-                Debug.Log("Player is here");
+                
                 IsLeft = false;
                 npc.SetBool("IsPlayerComing", true);
             }
            
             if (Input.GetKeyUp(KeyCode.Tab) && colliders[i].tag == "Player")
             {
-                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                FindObjectOfType<DialogueManager2>().StartDialogue(dialogue);
             }
         }
 
         if (IsLeft)
         {
-            FindObjectOfType<DialogueManager>().EndDialogue();
+            FindObjectOfType<DialogueManager2>().EndDialogue();
             npc.SetBool("IsPlayerComing", false);
         }
 
