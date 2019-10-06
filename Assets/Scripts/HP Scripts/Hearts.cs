@@ -42,7 +42,7 @@ public class Hearts : MonoBehaviour
         //GameObject thePlayer = GameObject.Find("ThePlayer");
         //PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         //numberOfHearts = playerScript.health;
-        Debug.Log("Heart is: " + numberOfHearts);
+ 
         //numberOfHearts = ph.getHealth();
         for (int i = 0; i < 10; i++)
         {
