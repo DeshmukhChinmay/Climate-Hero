@@ -6,7 +6,8 @@ public class PlayerAttack : MonoBehaviour
 {
     public int damage = 1;
     public float damageRadius = 1;
-
+    public BoxCollider2D attactCheck;
+    float timer;
     // Update is called once per frame
     void Update()
     {
@@ -21,12 +22,18 @@ public class PlayerAttack : MonoBehaviour
             // damage all enemies in the player's radius
             if (Input.GetButtonDown("Fire1") && colliders[i].tag == "Enemy")
             {
+                attactCheck.enabled = true;
                 colliders[i].GetComponent<EnemyHP>().ChangeHealth(-damage);
 
                 if (colliders[i].GetComponent<EnemyHP>().GetHealth <= 0)
                 {
                     Destroy(colliders[i].gameObject);
                 }
+            }
+            timer += Time.deltaTime;
+            if (timer > 0.4f)
+            {
+                attactCheck.enabled = false;
             }
         }
 
