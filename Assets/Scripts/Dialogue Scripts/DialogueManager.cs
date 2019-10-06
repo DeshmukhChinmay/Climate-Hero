@@ -9,7 +9,8 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences = new Queue<string>();
     public Text nameText;
     public Text dialogueText;
-    //public Animator animator;
+    public Image image;
+    public Sprite sprite1;
     public GameObject dialoguebox;
     
 
@@ -30,7 +31,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-
+        image.overrideSprite = sprite1;
         DisplayNextSentence();
     }
 
