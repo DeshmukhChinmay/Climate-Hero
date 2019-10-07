@@ -10,4 +10,6 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 - Lisa Wang
 - Terence Qu
 
-
+## Execution Instructions
+Clone prototype branch of the repo to your local machine
+Run ClimateQuest.exe in CLimateQuest folder.
