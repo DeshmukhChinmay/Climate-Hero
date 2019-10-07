@@ -5,28 +5,9 @@ using UnityEngine.UI;
 
 public class Hearts : MonoBehaviour
 {
-    //public int health;
-    //public int numberOfHearts=2;
-    //public Image[] hearts;
-    //public Sprite heart;
-    //void Update()
-    //{
-    //    for (int i=0; i < hearts.Length; i++) {
-    //        if (i < numberOfHearts)
-    //        {
-    //            hearts[i].enabled = true;
-    //        }
-    //        else {
-    //            hearts[i].enabled = false;
-    //        }
-    //    }
-
-    //}
     [SerializeField] private Sprite heartSprite;
     private List<HeartImage> hiList;
     private Hearts h;
-    private PlayerHP ph;
-    //public int health;
     public int numberOfHearts;
     private void Awake()
     {
@@ -39,7 +20,6 @@ public class Hearts : MonoBehaviour
         GameObject thePlayer = GameObject.Find("PlayerCollider");
         PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         numberOfHearts = playerScript.health;
-        // int health = ph.GetHealth;
         HeartImage image1 = createHeartImage(new Vector2(-385, 180));
         HeartImage image2 = createHeartImage(new Vector2(-375, 180));
         HeartImage image3 = createHeartImage(new Vector2(-365, 180));

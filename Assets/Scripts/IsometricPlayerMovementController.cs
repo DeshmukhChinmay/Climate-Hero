@@ -54,28 +54,30 @@ public class IsometricPlayerMovementController : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        if (horizontal > 0.5f || horizontal < -0.5f)
-        {
-            transform.Translate(new Vector3(
-                horizontal * movementSpeed * Time.deltaTime, 0f, 0f));
-            playerMoving = true;
-            lastMove = new Vector2(horizontal, 0f);
-        }
+        if (!playerAttacking) { 
+            if (horizontal > 0.5f || horizontal < -0.5f)
+            {
+                transform.Translate(new Vector3(
+                    horizontal * movementSpeed * Time.deltaTime, 0f, 0f));
+                playerMoving = true;
+                lastMove = new Vector2(horizontal, 0f);
+            }
 
-        if (vertical > 0.5f || vertical < -0.5f)
-        {
-            transform.Translate(new Vector3(
-                0f, vertical * movementSpeed * Time.deltaTime, 0f));
-            playerMoving = true;
-            lastMove = new Vector2(0f, vertical);
-        }
+            if (vertical > 0.5f || vertical < -0.5f)
+            {
+                transform.Translate(new Vector3(
+                    0f, vertical * movementSpeed * Time.deltaTime, 0f));
+                playerMoving = true;
+                lastMove = new Vector2(0f, vertical);
+            }
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            playerAttacking = true;
-            attackTimeCounter = attackTime;
-            animator.SetBool("IsAttacking", true);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                playerAttacking = true;
+                attackTimeCounter = attackTime;
+                animator.SetBool("IsAttacking", true);
 
+            }
         }
 
         if (attackTimeCounter > 0)
