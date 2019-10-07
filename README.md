@@ -10,6 +10,14 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 - Lisa Wang
 - Terence Qu
 
-## Execution Instructions
-Clone prototype branch of the repo to your local machine  
-Run ClimateQuest.exe in CLimateQuest folder.
+## Execution Instructions (for Windows)
+1. Clone or download the PROTOTYPE branch of the repository to your local machine
+2. Make sure the ClimateQuest folder contains ClimateQuest_Data and ClimateQuest.exe
+3. Run the ClimateQuest.exe file
+
+## Opening in Unity
+1. Clone or download the repository
+2. Make sure you have Unity version 2019.3.0b4 or higher installed
+3. Add project folder to Unity Hub
+4. Select version 2019.3.0b4 or higher
+5. Run project
