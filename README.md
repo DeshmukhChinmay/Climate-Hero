@@ -23,10 +23,10 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 5. Run project
 
 ## Controls
-WASD/Arrow keys to move
-Ctrl/Left mouse click to attack
-Tab to talk to NPC(cats)
-ESC to pause
+WASD/Arrow keys to move. 
+Ctrl/Left mouse click to attack. 
+Tab to talk to NPC(cats). 
+ESC to pause. 
 
 ## Other Info
 Details about the game can be found in the project wiki home.  
