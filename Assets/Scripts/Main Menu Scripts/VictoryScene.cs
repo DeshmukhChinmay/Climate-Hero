@@ -17,7 +17,7 @@ public class VictoryScene : MonoBehaviour
         enemies.text = Scores.enemiesDefeated.ToString ();
     }
     public void Next(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void MainMenu(){
