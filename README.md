@@ -21,3 +21,8 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 3. Add project folder to Unity Hub
 4. Select version 2019.3.0b4 or higher
 5. Run project
+
+## Other Info
+Details about the game can be found in the project wiki home.  
+Details about team member and meetings can be found in the about section of the wiki.
+Design documents for this project can be found in the design section of the wiki.
