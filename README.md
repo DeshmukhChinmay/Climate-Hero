@@ -22,13 +22,21 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 4. Select version 2019.3.0b4 or higher
 5. Run project
 
+<<<<<<< HEAD
 ## Controls 
 WASD/Arrow keys to move. 
+=======
+## Controls
+WASD/Arrow keys to move.  
+>>>>>>> origin/PROTOTYPE
 Ctrl/Left mouse click to attack.  
 Tab to talk to NPC(cats).  
 ESC to pause.  
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/PROTOTYPE
 ## Other Info
 Details about the game can be found in the project wiki home.  
 Details about team member and meetings can be found in the about section of the wiki.

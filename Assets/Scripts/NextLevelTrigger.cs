@@ -14,7 +14,7 @@ public class NextLevelTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
         bool playerFound = false;
 
         for (int i = 0; i < colliders.Length; i++) {
