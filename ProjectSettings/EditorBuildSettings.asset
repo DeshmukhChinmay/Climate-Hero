@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Basic Prototype/MainMenu.unity
     guid: 897f58790b7c2594ea7d2d6ab6f4ee84
   - enabled: 1
-    path: Assets/Scenes/Snowy_Area1.unity
+    path: Assets/Scenes/Basic Prototype/Snowy_Area1.unity
     guid: b799d1e6615218d4f86de8ab0c652929
   - enabled: 1
     path: Assets/Scenes/Basic Prototype/Forest_Area1.unity
