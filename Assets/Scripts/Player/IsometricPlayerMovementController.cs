@@ -22,7 +22,6 @@ public class IsometricPlayerMovementController : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody2D>();
         isoRenderer = GetComponentInChildren<IsometricCharacterRenderer>();
-        //isoRenderer = GetComponent<IsometricCharacterRenderer>();
         animator = GetComponentInChildren<Animator>();
 
         lastMove = new Vector2(0f, -0.5f);
@@ -34,31 +33,17 @@ public class IsometricPlayerMovementController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        /*
-        if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f 
-            || Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f) {
-            Vector2 currentPos = rbody.position;
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
-            Vector2 inputVector = new Vector2(horizontalInput, verticalInput);
-            inputVector = Vector2.ClampMagnitude(inputVector, 1);
-            Vector2 movement = inputVector * movementSpeed;
-            Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
-            //isoRenderer.SetDirection(movement);
-            rbody.MovePosition(newPos);
-            playerMoving = true;
-        }
-        */
         playerMoving = false;
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
+        // movement translation
         if (!playerAttacking) { 
             if (horizontal > 0.5f || horizontal < -0.5f)
             {
                 transform.Translate(new Vector3(
-                    horizontal * movementSpeed * Time.deltaTime, 0f, 0f));
+                    horizontal, 0f, 0f).normalized * movementSpeed * Time.deltaTime);
                 playerMoving = true;
                 lastMove = new Vector2(horizontal, 0f);
             }
@@ -66,7 +51,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
             if (vertical > 0.5f || vertical < -0.5f)
             {
                 transform.Translate(new Vector3(
-                    0f, vertical * movementSpeed * Time.deltaTime, 0f));
+                    0f, vertical, 0f).normalized * movementSpeed * Time.deltaTime);
                 playerMoving = true;
                 lastMove = new Vector2(0f, vertical);
             }
@@ -80,6 +65,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
             }
         }
 
+        // add timer between attacks to prevent spam attack
         if (attackTimeCounter > 0)
         {
             attackTimeCounter -= Time.deltaTime;
@@ -90,6 +76,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
             animator.SetBool("IsAttacking", false);
         }
 
+        // change animator properties
         animator.SetFloat("MoveX", horizontal);
         animator.SetFloat("MoveY", vertical);
         animator.SetFloat("LastMoveX", lastMove.x);
