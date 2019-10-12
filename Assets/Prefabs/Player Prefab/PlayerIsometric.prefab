@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4311123958168713485}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Player
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 4841480791730514031}
   m_Layer: 0
   m_Name: Render
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
