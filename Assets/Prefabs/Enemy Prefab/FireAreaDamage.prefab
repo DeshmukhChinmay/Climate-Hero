@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2872563848504275738}
   - component: {fileID: 2872563848504275737}
   - component: {fileID: 2872563848504275736}
+  - component: {fileID: 881553202}
   m_Layer: 0
   m_Name: FireAreaDamage
   m_TagString: Untagged
@@ -111,3 +112,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bac1551e0f8e849817d975c26099a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &881553202
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2872563848504275743}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a194581e5815b4e45a2c9a02d6313487, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
