@@ -36,7 +36,7 @@ public class DialogueManager3 : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.E))
         {
             DisplayNextSentence();
         }

@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences = new Queue<string>();
     public Text nameText;
     public Text dialogueText;
+    //public Animator animator;
     public GameObject dialoguebox;
     
 
@@ -29,12 +30,13 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+
         DisplayNextSentence();
     }
 
     public void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.E))
         {
             DisplayNextSentence();
         }

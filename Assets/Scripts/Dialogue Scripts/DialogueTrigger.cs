@@ -5,7 +5,6 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-  
     private float damageRadius = 1;
     public Animator npc;
 
@@ -27,7 +26,7 @@ public class DialogueTrigger : MonoBehaviour
                 npc.SetBool("IsPlayerComing", true);
             }
            
-            if (Input.GetKeyUp(KeyCode.Tab) && colliders[i].tag == "Player")
+            if (Input.GetKeyUp(KeyCode.E) && colliders[i].tag == "Player")
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             }
