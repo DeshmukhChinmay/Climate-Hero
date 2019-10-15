@@ -14,9 +14,7 @@ public class FinishLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("UPDATEEE");
         if(GetComponent<EnemyHP>().GetHealth <= 1){
-            Debug.Log("DEAD>>>");
             SceneManager.LoadScene("VictoryScene");
         }
     }

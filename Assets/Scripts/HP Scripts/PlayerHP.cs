@@ -57,6 +57,6 @@ public class PlayerHP : MonoBehaviour
         // cannot go below 0 and above maxHealth
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         health = currentHealth;
-        Debug.Log("Health is: " + currentHealth + "/" + maxHealth);
+        //Debug.Log("Health is: " + currentHealth + "/" + maxHealth);
     }
 }
