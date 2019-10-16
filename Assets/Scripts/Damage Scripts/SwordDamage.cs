@@ -11,6 +11,7 @@ public class SwordDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            GetComponent<AudioSource>().Play();
             collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
             if (collision.GetComponent<EnemyHP>().GetHealth <= 0)
             {
