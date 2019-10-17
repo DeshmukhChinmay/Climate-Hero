@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
 
     public GameObject enemyObject;
 
-    public Transform[] spawnPoints; 
-
-    // private Vector3 spawnPosition;
-    // private Quaternion rotation = new Quaternion(0,0,0,0);
+    public Transform[] spawnPoints;
 
     // Start is called before the first frame update
     void Start()
