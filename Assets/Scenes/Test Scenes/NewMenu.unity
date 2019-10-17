@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 512680162}
   - component: {fileID: 512680161}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,7 +1285,6 @@ GameObject:
   m_Component:
   - component: {fileID: 774518625}
   - component: {fileID: 774518626}
-  - component: {fileID: 774518627}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -1334,25 +1333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: e53e422090ccc4f4f9cdeb00e598a6a7, type: 2}
---- !u!95 &774518627
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774518624}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1db536f4b6d592e4987a93ab381acb06, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &855553089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1484,7 @@ GameObject:
   - component: {fileID: 874477961}
   - component: {fileID: 874477960}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2536,7 +2516,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SettingsTransition
+          m_StringArgument: BackTransition
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1758793336
