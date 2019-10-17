@@ -15,7 +15,7 @@ public class SwordDamage : MonoBehaviour
             collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
             if (collision.GetComponent<EnemyHP>().GetHealth <= 0)
             {
-                Destroy(collision.gameObject);
+                Destroy(collision.transform.parent.transform.parent.gameObject);
                 Scores.increaseEnemiesDefeated();
             }
 
