@@ -6,16 +6,19 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    private Queue<Sprite> avatars = new Queue<Sprite>();
     private Queue<string> sentences = new Queue<string>();
+
+    public Image avatarImage;
     public Text nameText;
     public Text dialogueText;
-    //public Animator animator;
     public GameObject dialoguebox;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        avatars = new Queue<Sprite>();
         sentences = new Queue<string>();
         dialoguebox.SetActive(false);
     }
@@ -24,11 +27,13 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguebox.SetActive(true);
 
+        avatars.Clear();
         sentences.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        for(int i = 0; i < dialogue.avatars.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            avatars.Enqueue(dialogue.avatars[i]);
+            sentences.Enqueue(dialogue.sentences[i]);
         }
 
         DisplayNextSentence();
@@ -36,12 +41,15 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E))
+        // Check for Space key input
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             DisplayNextSentence();
         }
     }
 
+    
+    // Updates the elements of the Dialogue GUI.
     public void DisplayNextSentence()
     { 
         if (sentences.Count == 0)
@@ -50,7 +58,10 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        Sprite avatar = avatars.Dequeue();
         string sentence = sentences.Dequeue();
+
+        avatarImage.sprite = avatar;
         nameText.text = sentence.Substring(0,8);
         dialogueText.text = sentence.Substring(9);
     }
