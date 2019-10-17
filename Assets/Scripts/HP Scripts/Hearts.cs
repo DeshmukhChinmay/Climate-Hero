@@ -20,19 +20,20 @@ public class Hearts : MonoBehaviour
         GameObject thePlayer = GameObject.Find("PlayerCollider");
         PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         numberOfHearts = playerScript.health;
-        HeartImage image1 = createHeartImage(new Vector2(-385, 180));
-        HeartImage image2 = createHeartImage(new Vector2(-375, 180));
-        HeartImage image3 = createHeartImage(new Vector2(-365, 180));
-        HeartImage image4 = createHeartImage(new Vector2(-355, 180));
-        HeartImage image5 = createHeartImage(new Vector2(-345, 180));
-        HeartImage image6 = createHeartImage(new Vector2(-385, 170));
-        HeartImage image7 = createHeartImage(new Vector2(-375, 170));
-        HeartImage image8 = createHeartImage(new Vector2(-365, 170));
-        HeartImage image9 = createHeartImage(new Vector2(-355, 170));
-        HeartImage image10 = createHeartImage(new Vector2(-345, 170));
+        HeartImage image1 = createHeartImage(new Vector2(0, 0));
+        HeartImage image2 = createHeartImage(new Vector2(50, 0));
+        HeartImage image3 = createHeartImage(new Vector2(100, 0));
+        HeartImage image4 = createHeartImage(new Vector2(150, 0));
+        HeartImage image5 = createHeartImage(new Vector2(200, 0));
+        HeartImage image6 = createHeartImage(new Vector2(0, 50));
+        HeartImage image7 = createHeartImage(new Vector2(50, 50));
+        HeartImage image8 = createHeartImage(new Vector2(100, 50));
+        HeartImage image9 = createHeartImage(new Vector2(150, 50));
+        HeartImage image10 = createHeartImage(new Vector2(200, 50));
     }
     public void Update()
-    {      GameObject thePlayer = GameObject.Find("PlayerCollider");
+    {
+        GameObject thePlayer = GameObject.Find("PlayerCollider");
         PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         numberOfHearts = playerScript.health;
         for (int i = 0; i < 10; i++)
@@ -56,7 +57,7 @@ public class Hearts : MonoBehaviour
         go.transform.localPosition = Vector3.zero;
 
         go.transform.GetComponent<RectTransform>().anchoredPosition = anchorPosit;
-        go.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(10, 10);
+        go.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(25, 25);
 
         Image heartImageUI = go.GetComponent<Image>();
         heartImageUI.sprite = heartSprite;
