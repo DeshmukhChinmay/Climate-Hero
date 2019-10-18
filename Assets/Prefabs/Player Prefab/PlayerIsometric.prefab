@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8458521017556654435}
   - component: {fileID: 1151919475886414237}
   - component: {fileID: 4311123958168713485}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sword
-  m_TagString: Sword
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,7 +178,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!210 &7883654485256720635
