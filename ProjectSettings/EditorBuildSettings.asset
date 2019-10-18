@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/2.ForestFinal.unity
     guid: 85b913e2fc2c62d4a802c06d92be59fc
+  - enabled: 1
+    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/1.SnowFinalForest.unity
+    guid: 96871bb4932791742b0689ceea9f7c36
   m_configObjects: {}
