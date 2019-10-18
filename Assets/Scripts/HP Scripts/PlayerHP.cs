@@ -56,6 +56,11 @@ public class PlayerHP : MonoBehaviour
             invincibleTimer = timeInvincible;
         }
         // cannot go below 0 and above maxHealth
+        if (amount > 0)
+        {
+            // healing sound effect
+            GetComponent<AudioSource>().Play();
+        }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         health = currentHealth;
         //Debug.Log("Health is: " + currentHealth + "/" + maxHealth);

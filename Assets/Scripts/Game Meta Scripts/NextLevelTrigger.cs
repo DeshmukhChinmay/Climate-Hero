@@ -18,7 +18,7 @@ public class NextLevelTrigger : MonoBehaviour
         bool playerFound = false;
 
         for (int i = 0; i < colliders.Length; i++) {
-            Debug.Log("There are some colliders detected");
+            //Debug.Log("There are some colliders detected");
             if (colliders[i].tag == "Player") {
                 SceneManager.LoadScene("Forest_Area1");
             }
