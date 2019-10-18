@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
@@ -58,5 +59,12 @@ public class PlayerHP : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         health = currentHealth;
         //Debug.Log("Health is: " + currentHealth + "/" + maxHealth);
+
+        if (currentHealth <= 0)
+        {
+            // add "you fainted text" before restart
+
+            SceneManager.LoadScene("Forest_Quest");
+        }
     }
 }
