@@ -24,4 +24,19 @@ public class VictoryScene : MonoBehaviour
     public void MainMenu(){
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void ForestLevel()
+    {
+        SceneManager.LoadScene("Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/2.ForestFinal.unity");
+    }
+
+    public void DesertLevel()
+    {
+        SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
+    }
+
+    public void BossLevel()
+    {
+        SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
+    }
 }

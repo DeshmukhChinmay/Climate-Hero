@@ -12,6 +12,8 @@ public class PlayerHP : MonoBehaviour
     private bool isInvincible;
     private float invincibleTimer;
 
+    public string mapName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,8 +70,7 @@ public class PlayerHP : MonoBehaviour
         if (currentHealth <= 0)
         {
             // add "you fainted text" before restart
-
-            SceneManager.LoadScene("Forest_Quest");
+            SceneManager.LoadScene("Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/"+ mapName +"DeathScene.unity");
         }
     }
 }
