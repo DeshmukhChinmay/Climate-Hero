@@ -23,14 +23,25 @@ public class PlayerDetection : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position,3);
         //Debug.Log(colliders.Length);
 
+        Collider2D player = null;
+
         for (int i = 0; i < colliders.Length; i++) {
             
             if (colliders[i].tag == "Player") {
                 //Debug.Log("This is getting run");
-                aIDestinationSetter.target = colliders[i].GetComponent<Transform>();
-            }
+                player = colliders[i];
+                // aIDestinationSetter.target = colliders[i].GetComponent<Transform>();
+                break;
+            } 
 
-        }       
+        }
+
+        if (player != null) {
+            aIDestinationSetter.target = player.GetComponent<Transform>();
+            Debug.Log("This is getting run");
+        } else {
+            aIDestinationSetter.target = null;
+        }
 
     }
 

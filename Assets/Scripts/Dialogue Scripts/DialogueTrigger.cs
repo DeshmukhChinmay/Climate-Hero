@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,15 +21,18 @@ public class DialogueTrigger : MonoBehaviour
         
         for (int i = 0; i < colliders.Length; i++)
         {
-            if (colliders[i].tag == "Player") { 
+          
+            if (colliders[i].tag == "Player") {
 
-            
                 IsLeft = false;
                 npc.SetBool("IsPlayerComing", true);
+                
             }
+           
            
             if (Input.GetKeyUp(KeyCode.E) && colliders[i].tag == "Player")
             {
+
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             }
         }

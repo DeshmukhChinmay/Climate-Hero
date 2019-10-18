@@ -13,7 +13,7 @@ public class HPBar : MonoBehaviour
         var enemy = p1.transform.parent;
         EnemyHP enemyScript = enemy.GetComponent<EnemyHP>();
         health = enemyScript.health;
-        Debug.Log("================Health is: " + health + "/" + maxhealth);
+        //Debug.Log("================Health is: " + health + "/" + maxhealth);
        // transform.localScale = new Vector3((float)health/maxhealth,1);
     }
 
