@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Scenes/Forest_Quest.unity
     guid: c4f0a9b025b6dda4681abed3571374da
+  - enabled: 1
+    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/2.ForestFinal.unity
+    guid: 85b913e2fc2c62d4a802c06d92be59fc
   m_configObjects: {}
