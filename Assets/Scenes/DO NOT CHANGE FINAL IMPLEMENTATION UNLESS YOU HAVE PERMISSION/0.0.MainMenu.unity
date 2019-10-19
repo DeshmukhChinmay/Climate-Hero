@@ -249,7 +249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 946c81be19a8b944e95e34fedcf27c19, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5369cf10b19bd437da4a1f69bc04d545, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 795f5841d8b2dd248a3297424b756087, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e93ef286b1cb4e1fa4173614ae05980, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3307,7 +3307,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1085134400}
-  - component: {fileID: 1085134401}
   m_Layer: 5
   m_Name: AchievementsMenu
   m_TagString: Untagged
@@ -3342,19 +3341,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -72.4}
   m_SizeDelta: {x: 800, y: 620}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1085134401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085134399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 301db568076599746bb4a7a4ff7f4d6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: e53e422090ccc4f4f9cdeb00e598a6a7, type: 2}
 --- !u!1 &1090732606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,9 +4155,9 @@ MonoBehaviour:
   desertQuest: {fileID: 104091894}
   forestQuestImage: {fileID: 18040103}
   desertQuestImage: {fileID: 326133694}
-  forestQuestComplete: {fileID: 21300000, guid: 08fcf966bb5c7ba4ba1771ee30c1a41e,
+  forestQuestComplete: {fileID: 21300000, guid: 60892507c7b774af2886ba153904921b,
     type: 3}
-  desertQuestComplete: {fileID: 21300000, guid: 0343939841a2080439bc4c9952d7b8f5,
+  desertQuestComplete: {fileID: 21300000, guid: 01befe2135fc74481844ca182be8ae19,
     type: 3}
 --- !u!1 &1383257505
 GameObject:
