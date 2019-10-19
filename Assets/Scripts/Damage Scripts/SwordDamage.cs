@@ -19,6 +19,14 @@ public class SwordDamage : MonoBehaviour
                 Scores.increaseEnemiesDefeated();
             }
 
+        } else if (collision.gameObject.tag == "SmokeEnemy") {
+            GetComponent<AudioSource>().Play();
+            collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
+            if (collision.GetComponent<EnemyHP>().GetHealth <= 0)
+            {
+                Destroy(collision.gameObject);
+                Scores.increaseEnemiesDefeated();
+            }
         }
     }
 }

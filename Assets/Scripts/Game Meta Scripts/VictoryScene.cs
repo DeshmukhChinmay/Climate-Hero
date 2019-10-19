@@ -9,6 +9,7 @@ public class VictoryScene : MonoBehaviour
 {
 
     [SerializeField] TMP_Text time, damage, enemies;
+  
     void Start()
     {
         Scores.Stop();
@@ -16,6 +17,8 @@ public class VictoryScene : MonoBehaviour
         time.text = Time.ToString () + "s";
         damage.text = Scores.damageTaken.ToString ();
         enemies.text = Scores.enemiesDefeated.ToString ();
+
+
     }
     public void Next(){
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -39,4 +42,6 @@ public class VictoryScene : MonoBehaviour
     {
         SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
     }
+
+
 }

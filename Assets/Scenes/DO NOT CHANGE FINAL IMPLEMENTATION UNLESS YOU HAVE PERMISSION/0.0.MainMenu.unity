@@ -249,7 +249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 946c81be19a8b944e95e34fedcf27c19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -569,7 +569,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Desert Area Quest Complete
+  m_Text: Desert Area Quest Incomplete
 --- !u!222 &104091895
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 795f5841d8b2dd248a3297424b756087, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1918,7 +1918,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Forest Area Quest Complete
+  m_Text: Forest Area Quest Incomplete
 --- !u!222 &498805864
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4080,6 +4080,7 @@ GameObject:
   - component: {fileID: 1309559453}
   - component: {fileID: 1309559455}
   - component: {fileID: 1309559454}
+  - component: {fileID: 1309559456}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -4152,6 +4153,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309559452}
   m_CullTransparentMesh: 0
+--- !u!114 &1309559456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309559452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acddde9a0234b34ea5ae2337816906d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forestQuest: {fileID: 498805863}
+  desertQuest: {fileID: 104091894}
+  forestQuestImage: {fileID: 18040103}
+  desertQuestImage: {fileID: 326133694}
+  forestQuestComplete: {fileID: 21300000, guid: 08fcf966bb5c7ba4ba1771ee30c1a41e,
+    type: 3}
+  desertQuestComplete: {fileID: 21300000, guid: 0343939841a2080439bc4c9952d7b8f5,
+    type: 3}
 --- !u!1 &1383257505
 GameObject:
   m_ObjectHideFlags: 0

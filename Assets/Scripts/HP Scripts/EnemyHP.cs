@@ -13,7 +13,7 @@ public class EnemyHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = 10;
+        currentHealth = maxHealth;
         health = currentHealth;
     }
 
