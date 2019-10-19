@@ -22,12 +22,12 @@ public class VictoryScene : MonoBehaviour
     }
 
     public void MainMenu(){
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("0.0.MainMenu");
     }
 
     public void ForestLevel()
     {
-        SceneManager.LoadScene("Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/2.ForestFinal.unity");
+        SceneManager.LoadScene("2.ForestFinal");
     }
 
     public void DesertLevel()
