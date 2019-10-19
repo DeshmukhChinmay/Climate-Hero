@@ -13,8 +13,10 @@ public class AchievementScript : MonoBehaviour
     {
         if (ForestQuestScript.checkStatus() == true){
             forestQuest.text="Forest Quest Complete";
-            desertQuest.text="Desert Quest Complete";
             forestQuestImage.sprite = forestQuestComplete;
+        }
+        if (DesertQuestScript.checkStatus() == true){
+            desertQuest.text="Desert Quest Complete";
             desertQuestImage.sprite = desertQuestComplete;
         }
     }
