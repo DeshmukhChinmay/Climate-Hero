@@ -18,10 +18,4 @@ public sealed class ForestQuestScript : MonoBehaviour
         }
         return false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
