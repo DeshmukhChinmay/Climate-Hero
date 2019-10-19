@@ -44,7 +44,7 @@ public class EnemyHP : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         health = currentHealth;
         
-        Debug.Log("Enemy health is: " + currentHealth + "/" + maxHealth);
+        //Debug.Log("Enemy health is: " + currentHealth + "/" + maxHealth);
     }
 
     private void Update()

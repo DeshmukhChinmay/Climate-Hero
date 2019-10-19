@@ -22,7 +22,7 @@ public class OilEnemyPlayerDetection : MonoBehaviour
         for (int i = 0; i < colliders.Length; i++) {
             if (colliders[i].tag == "Player") {
                 player = colliders[i];
-                Debug.Log("Smoke Enemy found the player!!!");
+                //Debug.Log("Smoke Enemy found the player!!!");
                 break;
             }
         }
@@ -30,7 +30,7 @@ public class OilEnemyPlayerDetection : MonoBehaviour
         if (player != null) {
             Dash();
         } else {
-            Debug.Log("Player not found!");
+            //Debug.Log("Player not found!");
         }        
     }
 
@@ -41,7 +41,7 @@ public class OilEnemyPlayerDetection : MonoBehaviour
         if (waitTime <= 0) {
             waitTime = 2f;
 
-            Debug.Log("Dash is getting called!!!");
+            //Debug.Log("Dash is getting called!!!");
 
             rigidBody = GetComponent<Rigidbody2D>();
 

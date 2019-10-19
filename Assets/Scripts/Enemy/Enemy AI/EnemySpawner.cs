@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = 1; i <= spawnPoints.Length; i++) {
             values.Add(i);
-            Debug.Log(spawnPoints.Length);
+            //Debug.Log(spawnPoints.Length);
         }
 
         for (int j = 0; j < (spawnPoints.Length/2); j++) {
