@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * To use this script, you need to attach this to a GameObject
+ * that contains a 2D Trigger collider.
+ */
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-  
-    private float damageRadius = 1;
     //public Animator npc;
 
     private bool playerInRange;
