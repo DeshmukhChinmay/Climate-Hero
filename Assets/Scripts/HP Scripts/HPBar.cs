@@ -13,8 +13,9 @@ public class HPBar : MonoBehaviour
         var enemy = p1.transform.parent;
         EnemyHP enemyScript = enemy.GetComponent<EnemyHP>();
         health = enemyScript.health;
+        maxhealth = enemyScript.maxHealth;
         //Debug.Log("================Health is: " + health + "/" + maxhealth);
-       // transform.localScale = new Vector3((float)health/maxhealth,1);
+        // transform.localScale = new Vector3((float)health/maxhealth,1);
     }
 
         // Update is called once per frame
@@ -25,6 +26,7 @@ public class HPBar : MonoBehaviour
         var enemy = p1.transform.parent;
         EnemyHP enemyScript = enemy.GetComponent<EnemyHP>();
         health = enemyScript.health;
+        maxhealth = enemyScript.maxHealth;
         //Debug.Log("================Health is===============: " + health + "/" + maxhealth);
 
         transform.localScale = new Vector3((float)health / maxhealth, 1);
