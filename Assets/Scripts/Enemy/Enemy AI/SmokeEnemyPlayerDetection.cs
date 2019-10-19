@@ -8,7 +8,7 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
     public GameObject smokeAttack;
     public Transform firePoint;
 
-    public float waitTime = 0.5f;
+    public float waitTime;
 
     private bool firstShot = true;
     
@@ -16,7 +16,7 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 4);
         Collider2D player = null;
 
         for (int i = 0; i < colliders.Length; i++) {
@@ -43,7 +43,7 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
             firstShot = false;
         } else if (waitTime <= 0) {
 
-            waitTime = 0.5f;
+            waitTime = 0.2f;
 
             Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
         }
