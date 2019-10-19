@@ -62,9 +62,8 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
 
         avatarImage.sprite = avatar;
-
-        nameText.text = sentence.Substring(0, sentence.IndexOf('\n'));
-        dialogueText.text = sentence.Substring(sentence.IndexOf('\n') + 1);
+        nameText.text = sentence.Substring(0,10);
+        dialogueText.text = sentence.Substring(11);
     }
 
     public void EndDialogue()
