@@ -7,6 +7,10 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
 
     public GameObject smokeAttack;
     public Transform firePoint;
+
+    public float waitTime = 0.5f;
+
+    private bool firstShot = true;
     
 
     // Update is called once per frame
@@ -31,6 +35,19 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
     }
 
     void Fire() {
-        Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
+
+        waitTime -= Time.deltaTime;
+
+        if (firstShot == true) {
+            Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
+            firstShot = false;
+        } else if (waitTime <= 0) {
+
+            waitTime = 0.5f;
+
+            Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
+        }
+
+        // Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
     }
 }

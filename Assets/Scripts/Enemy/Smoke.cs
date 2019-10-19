@@ -5,25 +5,41 @@ using UnityEngine;
 public class Smoke : MonoBehaviour
 {
 
-    private float speed = 10f;
-    // public RigidBody2D rigidBody; 
-
+    private float speed = 1f;
+    public Rigidbody2D rigidBody;
     private Transform player;
+
+    Vector2 moveDirection;
 
     // Start is called before the first frame update
     void Start()
     {
 
+        rigidBody = GetComponent<Rigidbody2D>();
+
         this.player = GameObject.FindWithTag("Player").transform;
 
-        Vector3 playerPos = new Vector3(player.position.x, player.position.y +1, player.position.z);
+        moveDirection = (player.transform.position - transform.position).normalized * speed;
+        rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
+        Destroy(gameObject, 2f);
 
-        transform.rotation = Quaternion.LookRotation(playerPos);
-        transform.LookAt(player.position);   
+        // Vector3 playerPos = new Vector3(player.position.x, player.position.y +1, player.position.z);
+
+        // transform.rotation = Quaternion.LookRotation(playerPos);
+        // transform.LookAt(player.position);   
     }
 
     void Update() {
-        transform.position += transform.forward * speed * Time.deltaTime;
+        // transform.position += transform.forward * speed * Time.deltaTime;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag.Equals("Player")) {
+            Debug.Log("Player Hit!");
+            Destroy(gameObject);
+        } else if (collision.gameObject.tag.Equals("Obstacle")) {
+            Destroy(gameObject);
+        }
     }
 
 }
