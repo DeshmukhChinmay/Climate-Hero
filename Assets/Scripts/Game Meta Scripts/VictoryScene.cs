@@ -9,7 +9,7 @@ public class VictoryScene : MonoBehaviour
 {
 
     [SerializeField] TMP_Text time, damage, enemies;
-    public int numStar = 1;
+  
     void Start()
     {
         Scores.Stop();

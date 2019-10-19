@@ -6,7 +6,7 @@ public sealed class Scores : MonoBehaviour
 {
     public static float timer;
     public static int enemiesDefeated, damageTaken;
-    public static int seedCollected = 10;
+    public static int seedCollected;
     static bool stopTimer;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +14,7 @@ public sealed class Scores : MonoBehaviour
         timer = 0f;
         enemiesDefeated = 0;
         damageTaken = 0;
+        seedCollected = 0;
         stopTimer = false;
     }
 
@@ -36,5 +37,10 @@ public sealed class Scores : MonoBehaviour
 
     public static void increaseDamageTaken(){
         damageTaken += 1;
+    }
+
+   public static void increaseSeedCollect()
+    {
+        seedCollected++;
     }
 }

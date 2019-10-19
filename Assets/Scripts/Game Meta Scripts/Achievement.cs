@@ -22,30 +22,34 @@ public class Achievement : MonoBehaviour
         // PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         //numOfStars = playerScript.achievement;
         Scores.Stop();
-        
-       
+
+
         int enemies = Scores.enemiesDefeated;
         int sideQuest = Scores.seedCollected;
-       
-        if (enemies > 10)
-        {
-            numOfStars++;
-        }
-        if (sideQuest > 9)
-        {
-            numOfStars++;
-        }
-        StarImage image1 = createStarImage(new Vector2(0, 10));
+
+                if (enemies > 18)
+                {
+                    numOfStars++;
+                }
+                if (sideQuest > 8)
+                {
+                    numOfStars++;
+                }
+        StarImage image1 = createStarImage(new Vector2(0 , 10));
         StarImage image2 = createStarImage(new Vector2(70, 10));
         StarImage image3 = createStarImage(new Vector2(140, 10));
-        showStars(numOfStars);
+        Debug.Log("Number of stars is: " + numOfStars);
+        //showStars(numOfStars);
     }
 
     public void showStars(int num)
     {
         for( int i = 0; i < num; i++)
         {
-            starList[i].Set(1);
+            
+            StarImage image1 = createStarImage(new Vector2(0+i*70, 10));
+            Debug.Log("star");
+
         }
     }
 
@@ -67,7 +71,17 @@ public class Achievement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0; i < 3; i++)
+        {
+            if (i < numOfStars)
+            {
+                starList[i].Set(1);
+            }
+            else
+            {
+                starList[i].Set(0);
+            }
+        }
     }
 
     public class StarImage
