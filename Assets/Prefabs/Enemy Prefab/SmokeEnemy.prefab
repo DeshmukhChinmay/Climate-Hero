@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336057747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: -0.14, z: 0}
+  m_LocalPosition: {x: -0.14, y: 0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9038863539858124258}
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxhealth: 10
+  maxhealth: 2
 --- !u!1 &2563430680148820402
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 235882645}
   m_Layer: 0
   m_Name: SmokeEnemy
-  m_TagString: Enemy
+  m_TagString: SmokeEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8b5516ac0ea7543be7ef5567665fed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 2
   health: 0
   attactAmount: -1
 --- !u!114 &1615442071
@@ -484,3 +484,4 @@ MonoBehaviour:
   smokeAttack: {fileID: 4193640594488710606, guid: d5fbc560747df4286a2c27898dfc2147,
     type: 3}
   firePoint: {fileID: 336057748}
+  waitTime: 0
