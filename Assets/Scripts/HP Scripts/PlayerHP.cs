@@ -70,7 +70,7 @@ public class PlayerHP : MonoBehaviour
         if (currentHealth <= 0)
         {
             // add "you fainted text" before restart
-            SceneManager.LoadScene("Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/"+ mapName +"DeathScene.unity");
+            SceneManager.LoadScene("Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0."+ mapName +"DeathScene.unity");
         }
     }
 }
