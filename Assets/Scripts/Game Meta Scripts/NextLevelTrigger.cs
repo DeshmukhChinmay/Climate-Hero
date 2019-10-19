@@ -15,12 +15,11 @@ public class NextLevelTrigger : MonoBehaviour
     void Update()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
-        bool playerFound = false;
 
         for (int i = 0; i < colliders.Length; i++) {
             //Debug.Log("There are some colliders detected");
             if (colliders[i].tag == "Player") {
-                SceneManager.LoadScene("Forest_Area1");
+                SceneManager.LoadScene("2.ForestFinal");
             }
         }
     }

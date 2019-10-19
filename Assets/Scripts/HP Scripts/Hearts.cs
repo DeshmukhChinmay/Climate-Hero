@@ -25,11 +25,11 @@ public class Hearts : MonoBehaviour
         HeartImage image3 = createHeartImage(new Vector2(100, 0));
         HeartImage image4 = createHeartImage(new Vector2(150, 0));
         HeartImage image5 = createHeartImage(new Vector2(200, 0));
-        HeartImage image6 = createHeartImage(new Vector2(0, 50));
-        HeartImage image7 = createHeartImage(new Vector2(50, 50));
-        HeartImage image8 = createHeartImage(new Vector2(100, 50));
-        HeartImage image9 = createHeartImage(new Vector2(150, 50));
-        HeartImage image10 = createHeartImage(new Vector2(200, 50));
+        HeartImage image6 = createHeartImage(new Vector2(0, -50));
+        HeartImage image7 = createHeartImage(new Vector2(50, -50));
+        HeartImage image8 = createHeartImage(new Vector2(100, -50));
+        HeartImage image9 = createHeartImage(new Vector2(150, -50));
+        HeartImage image10 = createHeartImage(new Vector2(200, -50));
     }
     public void Update()
     {
