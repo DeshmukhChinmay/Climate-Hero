@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Achievement : MonoBehaviour
 {
-    public int numOfStars = 3;
+    public int numOfStars = 1;
     [SerializeField] Sprite star;
     private List<StarImage> starList;
     private Achievement a;
@@ -18,13 +18,39 @@ public class Achievement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  GameObject thePlayer = GameObject.Find("PlayerCollider");
-       // PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
+        //  GameObject thePlayer = GameObject.Find("PlayerCollider");
+        // PlayerHP playerScript = thePlayer.GetComponent<PlayerHP>();
         //numOfStars = playerScript.achievement;
-        StarImage image1 = createStarImage(new Vector2(0, 10));
+        Scores.Stop();
+
+
+        int enemies = Scores.enemiesDefeated;
+        int sideQuest = Scores.seedCollected;
+
+                if (enemies > 18)
+                {
+                    numOfStars++;
+                }
+                if (sideQuest > 8)
+                {
+                    numOfStars++;
+                }
+        StarImage image1 = createStarImage(new Vector2(0 , 10));
         StarImage image2 = createStarImage(new Vector2(70, 10));
         StarImage image3 = createStarImage(new Vector2(140, 10));
+        Debug.Log("Number of stars is: " + numOfStars);
+        //showStars(numOfStars);
+    }
 
+    public void showStars(int num)
+    {
+        for( int i = 0; i < num; i++)
+        {
+            
+            StarImage image1 = createStarImage(new Vector2(0+i*70, 10));
+            Debug.Log("star");
+
+        }
     }
 
     private StarImage createStarImage(Vector2 anchorPosit)
@@ -45,7 +71,17 @@ public class Achievement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0; i < 3; i++)
+        {
+            if (i < numOfStars)
+            {
+                starList[i].Set(1);
+            }
+            else
+            {
+                starList[i].Set(0);
+            }
+        }
     }
 
     public class StarImage
