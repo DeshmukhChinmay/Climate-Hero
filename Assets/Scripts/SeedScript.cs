@@ -14,5 +14,6 @@ public class SeedScript : MonoBehaviour
     {
         Destroy(gameObject);
         ForestQuestScript.completeObjective();
+        Scores.increaseSeedCollect();
     }
 }
