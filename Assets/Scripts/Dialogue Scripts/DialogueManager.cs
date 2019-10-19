@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
         dialoguebox.SetActive(false);
     }
 
+    // Initiates a set of dialogue text represented by a Dialogue object.
     public void StartDialogue(Dialogue dialogue)
     {
         dialoguebox.SetActive(true);
@@ -62,10 +63,11 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
 
         avatarImage.sprite = avatar;
-        nameText.text = sentence.Substring(0,10);
-        dialogueText.text = sentence.Substring(11);
+        nameText.text = sentence.Substring(0,sentence.IndexOf('\n'));
+        dialogueText.text = sentence.Substring(sentence.IndexOf('\n')+1);
     }
 
+    // End the dialogue and disable the dialogue UI box.
     public void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);

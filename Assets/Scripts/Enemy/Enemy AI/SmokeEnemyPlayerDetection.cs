@@ -22,7 +22,7 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
         for (int i = 0; i < colliders.Length; i++) {
             if (colliders[i].tag == "Player") {
                 player = colliders[i];
-                Debug.Log("Smoke Enemy found the player!!!");
+                //Debug.Log("Smoke Enemy found the player!!!");
                 break;
             }
         }
@@ -30,7 +30,7 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
         if (player != null) {
             Fire();
         } else {
-            Debug.Log("Player not found!");
+            //Debug.Log("Player not found!");
         }
     }
 

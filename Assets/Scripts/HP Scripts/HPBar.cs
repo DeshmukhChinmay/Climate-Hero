@@ -21,12 +21,15 @@ public class HPBar : MonoBehaviour
         // Update is called once per frame
         void Update()
     {
+        /*
         var parent = this.transform.parent;
         var p1 = parent.transform.parent;
         var enemy = p1.transform.parent;
+        
         EnemyHP enemyScript = enemy.GetComponent<EnemyHP>();
         health = enemyScript.health;
         maxhealth = enemyScript.maxHealth;
+        */
         //Debug.Log("================Health is===============: " + health + "/" + maxhealth);
 
         transform.localScale = new Vector3((float)health / maxhealth, 1);
