@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3708298797822193737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3708298797822193740}
+  - component: {fileID: 3708298797822193743}
+  - component: {fileID: 3708298797822193742}
+  - component: {fileID: 354925056}
+  m_Layer: 0
+  m_Name: PolarBear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3708298797822193740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708298797822193737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.54, y: 2.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3708298797822193743
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708298797822193737}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.84, y: 0.88}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &3708298797822193742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708298797822193737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6284756d06fde439ba5bb5a6e10ee9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    avatars:
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7, type: 3}
+    - {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535, type: 3}
+    - {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7, type: 3}
+    name: Polar Bear
+    sentences:
+    - "Polar Bear: \nYou look worried. What\u2019s bothering you?"
+    - "Player:    \nI am worried about our town Mr. Polar Bear.\nThe water level
+      is rising rapidly and the ice caps from the mountains are melting as well.\r"
+    - "Player:    \n\rSoon our entire town will go underwater.\r\nEven if we move
+      to another place, my polar bears won\u2019t be able to survive.\r\nWhy are
+      the sea levels rising?\r Why is it warming up so much?\r"
+    - "Polar Bear: \nThe planet is warming up due to global warming.\r\nThe Super
+      Evil MegaCorp is causing harm to the environment due to its wrong doings.\r"
+    - "Polar Bear: \n:( They are cutting down forests and mining coal and oil to
+      use the wood and the oil as fuel sources for their plant.\r\n"
+    - "Polar Bear: \nHarmful gases are then released as a bi-product of using those
+      fuels which are depleting the ozone layer which causes the planet to warm up.\r"
+    - "Player:    \nCan I do anything to reverse the harm that they have caused?"
+    - "Polar Bear: \nUnfortunately no.\r But ...\r\nYou can slow down its effects
+      by stopping the corp and preventing it from further affecting the environment.\r"
+    - "Player:    \nHow would I do that?"
+    - "Polar Bear: \nThe corporation is run from the main factory close to our town.\r"
+    - "Polar Bear: \nIn order to enter it, you will need to destroy the two batteries
+      that are powering its security gates.\r"
+    - "Polar Bear: \nThe first battery is in a forest down south from here.\r\nThe
+      other one is in a desert due east.\r"
+    - "Polar Bear: \nI know you have the potential to destroy those batteries and
+      enter the factory to stop the harm that the MegaCorp is causing.\r"
+    - "Polar Bear: \nHere have my sword.\r *Obtained *\r\nIt will help you on your
+      journey to destroy the batteries.\r"
+    - "Polar Bear: \nBe cautious as the corporation has created mutant elements which
+      are protecting those batteries\r"
+    - "Polar Bear: \nI tried destroying the batteries when I was young. But they
+      were too strong for me.\r"
+    - "Player:    \nThank you Mr. Polar Bear!\nI will put a stop to them.\r"
+  npc: {fileID: 0}
+--- !u!58 &354925056
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708298797822193737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.14228973}
+  serializedVersion: 2
+  m_Radius: 0.29771027
