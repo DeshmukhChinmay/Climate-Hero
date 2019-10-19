@@ -15,27 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/1.SnowFinalForest.unity
     guid: 96871bb4932791742b0689ceea9f7c36
   - enabled: 1
-    path: Assets/Scenes/Basic Prototype/Snowy_Area1.unity
-    guid: c91216d1b68a6487dadaf45ed27b1597
-  - enabled: 1
-    path: Assets/Scenes/Desert.unity
-    guid: 2fcf3bc430222744f999bdaedb4f4522
-  - enabled: 1
     path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.0.MainMenu.unity
     guid: 73c1047917c678b4baa35b0f3453bfb4
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/2.ForestFinal.unity
-    guid: 85b913e2fc2c62d4a802c06d92be59fc
-  - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/1.SnowFinalForest.unity
-    guid: 96871bb4932791742b0689ceea9f7c36
-  - enabled: 1
-    path: Assets/Scenes/Basic Prototype/Snowy_Area1.unity
-    guid: c91216d1b68a6487dadaf45ed27b1597
-  - enabled: 1
-    path: Assets/Scenes/Desert.unity
-    guid: 2fcf3bc430222744f999bdaedb4f4522
-  - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.0.MainMenu.unity
-    guid: 73c1047917c678b4baa35b0f3453bfb4
+    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.2.VictoryScene.unity
+    guid: 68d7adda8078f934a80b4a17afb8cc99
   m_configObjects: {}
