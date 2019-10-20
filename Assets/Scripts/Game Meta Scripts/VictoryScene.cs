@@ -45,12 +45,12 @@ public class VictoryScene : MonoBehaviour
 
     public void DesertLevel()
     {
-        SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
+        SceneManager.LoadScene("4.Desert");
     }
 
     public void BossLevel()
     {
-        SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
+        SceneManager.LoadScene("6.Factory");
     }
 
 
