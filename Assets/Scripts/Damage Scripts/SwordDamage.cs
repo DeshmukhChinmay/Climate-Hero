@@ -27,7 +27,7 @@ public class SwordDamage : MonoBehaviour
                 Destroy(collision.gameObject);
                 Scores.increaseEnemiesDefeated();
             }
-        } else if (collision.gameObject.tag == "CoalPlant" || collision.gameObject.tag == "OilPlant")
+        } else if (collision.gameObject.tag == "CoalPlant" || collision.gameObject.tag == "OilPlant" || collision.gameObject.tag == "Boss")
         {
             GetComponent<AudioSource>().Play();
             collision.GetComponent<EnemyHP>().ChangeHealth(-damage);

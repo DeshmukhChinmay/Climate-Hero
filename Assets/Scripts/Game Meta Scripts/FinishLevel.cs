@@ -22,6 +22,10 @@ public class FinishLevel : MonoBehaviour
             {
                 SceneManager.LoadScene("0.2.DesertVictoryScene");
             }
+            if (GetComponent<EnemyHP>().tag == "Boss")
+            {
+                SceneManager.LoadScene("0.3.BossVictory");
+            }
         }
         
     }
