@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7612658173210626853}
   - component: {fileID: 882420022846662545}
   m_Layer: 0
-  m_Name: SmokeAttack
+  m_Name: SmokeAttackBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2130146985
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 592b263e47847f94fba4f29c193541b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
