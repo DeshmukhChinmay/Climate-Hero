@@ -33,14 +33,24 @@ public class VictoryScene : MonoBehaviour
         SceneManager.LoadScene("2.ForestFinal");
     }
 
+    public void SnowWithDesertUnlocked()
+    {
+        SceneManager.LoadScene("3.SnowFinalDesert");
+    }
+
+    public void SnowWithBossUnlocked()
+    {
+        SceneManager.LoadScene("5.SnowFinalBoss");
+    }
+
     public void DesertLevel()
     {
-        SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
+        SceneManager.LoadScene("4.Desert");
     }
 
     public void BossLevel()
     {
-        SceneManager.LoadScene("Assets/Scenes/Test Scenes/Forest_Quest.unity");
+        SceneManager.LoadScene("6.Factory");
     }
 
 

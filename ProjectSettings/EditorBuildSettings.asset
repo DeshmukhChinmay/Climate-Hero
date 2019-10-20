@@ -6,37 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.0.MainMenu.unity
+    path: Assets/Scenes/Final Implementation/0.0.MainMenu.unity
     guid: 73c1047917c678b4baa35b0f3453bfb4
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/1.SnowFinalForest.unity
+    path: Assets/Scenes/Final Implementation/1.SnowFinalForest.unity
     guid: 96871bb4932791742b0689ceea9f7c36
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/2.ForestFinal.unity
+    path: Assets/Scenes/Final Implementation/2.ForestFinal.unity
     guid: 85b913e2fc2c62d4a802c06d92be59fc
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.ForestDeathScene.unity
+    path: Assets/Scenes/Final Implementation/0.ForestDeathScene.unity
     guid: d24065b243326ec45984bcd73b5e5535
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/3.SnowFinalDesert.unity
+    path: Assets/Scenes/Final Implementation/3.SnowFinalDesert.unity
     guid: 8db193dca9990eb41b60d1a4a41788f0
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/4.Desert.unity
+    path: Assets/Scenes/Final Implementation/4.Desert.unity
     guid: 5c870012cd8fb2e42996755f768fef86
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/5.SnowFinalBoss.unity
+    path: Assets/Scenes/Final Implementation/5.SnowFinalBoss.unity
     guid: 8f2ea418b6b0ddf488cf9ad03436fa43
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/6.Factory.unity
+    path: Assets/Scenes/Final Implementation/6.Factory.unity
     guid: 47c2997731ff33f478c9d4ee5831b0d6
   - enabled: 1
     path: Assets/Scenes/Test Scenes/VictoryScene.unity
     guid: e07e316f751107d4f9489ba1e722baea
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.2.DesertVictoryScene
-      .unity
+    path: Assets/Scenes/Final Implementation/0.2.ForestVictoryScene.unity
+    guid: be991c9e84bbe4fab8bf44490c750d3b
+  - enabled: 1
+    path: Assets/Scenes/Final Implementation/0.DesertDeathScene.unity
+    guid: b7e11c8bcfdb8194d88764b4a85af1c2
+  - enabled: 1
+    path: Assets/Scenes/Final Implementation/0.BossDeathScene.unity
+    guid: e7b8eb44a3af1004d9441de733e7b619
+  - enabled: 1
+    path: Assets/Scenes/Final Implementation/0.2.DesertVictoryScene.unity
     guid: 0d0cfb58210e043c8a009b2f22e1695e
   - enabled: 1
-    path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.2.ForestVictoryScene.unity
-    guid: be991c9e84bbe4fab8bf44490c750d3b
+    path: Assets/Scenes/Final Implementation/0.3.BossVictory.unity
+    guid: 88b24a65994457946921c95483df0e15
   m_configObjects: {}

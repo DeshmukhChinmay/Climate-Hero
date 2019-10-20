@@ -1,4 +1,4 @@
-# 306Project2
+# Climate Hero
 Project 2 for SOFTENG 306. Team 9. This project is about building a serious game revolving around climate change. The target audience of the game is 12 year olds.
 
 ## Team Members
@@ -24,8 +24,8 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 
 ## Controls
 WASD/Arrow keys to move.  
-Ctrl/Left mouse click to attack.  
-Tab to talk to NPC(cats).  
+Left mouse click to attack.  
+E to talk to NPC (bears).  
 ESC to pause.  
 
 ## Other Info
