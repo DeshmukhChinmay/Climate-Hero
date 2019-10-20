@@ -25,7 +25,6 @@ public class FinishLevel : MonoBehaviour
             if (GetComponent<EnemyHP>().tag == "Boss")
             {
                 Victory.SetActive(true);
-                Time.timeScale = 0f;
             }
         }
         

@@ -36,7 +36,7 @@ public class SmokeBoss : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag.Equals("Player")) {
             Debug.Log("Player Hit!");
-            PlayerHP playerHP = collision.GetComponent<PlayerHP>();
+            PlayerHP playerHP = collision.GetComponentInChildren<PlayerHP>();
             
             if (playerHP != null) {
                 if (playerHP.GetHealth >0) {

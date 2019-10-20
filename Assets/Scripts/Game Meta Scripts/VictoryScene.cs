@@ -26,7 +26,6 @@ public class VictoryScene : MonoBehaviour
 
     public void MainMenu(){
         SceneManager.LoadScene("0.0.MainMenu");
-        Time.timeScale = 1f;
     }
 
     public void ForestLevel()
