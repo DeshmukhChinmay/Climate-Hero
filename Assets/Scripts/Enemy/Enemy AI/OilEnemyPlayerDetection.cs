@@ -5,7 +5,7 @@ using UnityEngine;
 public class OilEnemyPlayerDetection : MonoBehaviour
 {
 
-    private float speed = 3f;
+    private float speed = 4f;
     private Rigidbody2D rigidBody;
     private Transform player;
 
@@ -29,9 +29,8 @@ public class OilEnemyPlayerDetection : MonoBehaviour
 
         if (player != null) {
             Dash();
-        } else {
-            //Debug.Log("Player not found!");
-        }        
+        } 
+
     }
 
     void Dash() {
@@ -65,4 +64,21 @@ public class OilEnemyPlayerDetection : MonoBehaviour
         // rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
         
     }
+
+    // void Move() {
+        
+    //     waitTime -= Time.deltaTime;
+
+    //     if (waitTime <= 0) {
+    //         waitTime = 0.5f;
+
+    //         rigidBody = GetComponent<Rigidbody2D>();
+
+    //         Vector3 target 
+
+    //         moveDirection = (player.transform.position - transform.position).normalized * speed;
+    //         rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
+    //     }
+
+    // }
 }
