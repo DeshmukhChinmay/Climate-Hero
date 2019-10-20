@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4193640594488710607}
   - component: {fileID: 4193640594488710450}
   - component: {fileID: -7612658173210626853}
-  - component: {fileID: 882420022846662545}
   m_Layer: 0
   m_Name: SmokeAttack
   m_TagString: Untagged
@@ -121,7 +120,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!114 &-7612658173210626853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,16 +134,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 0}
---- !u!114 &882420022846662545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4193640594488710606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 550fd69d9375ed046816fb23f075c30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackAmount: -1
