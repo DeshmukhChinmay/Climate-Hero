@@ -187,7 +187,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1160994246985172883}
-  - component: {fileID: 1160994246985172882}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -211,20 +210,6 @@ Transform:
   m_Father: {fileID: 1160994247243357088}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1160994246985172882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160994246985172892}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e8efd133e694a0c82ddb462889f0db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxhealth: 10
 --- !u!1 &1160994247243357091
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550fd69d9375ed046816fb23f075c30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attactAmount: -1
+  attackAmount: -1
 --- !u!1 &1160994247470037323
 GameObject:
   m_ObjectHideFlags: 0
