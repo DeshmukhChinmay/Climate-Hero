@@ -123,10 +123,10 @@ MonoBehaviour:
     name: g-bear
     sentences:
     - "Player:  \nHi there, you look pretty strong"
-    - "Grizzly :  \nAh yes I used to chop wood for a living."
-    - "Grizzly :  \nBut ever since the corporation came along, I was no longer needed"
-    - "Grizzly :  \nWe used to live in harmony with the forest, planting trees for
+    - "Grizzy   : \nAh yes I used to chop wood for a living."
+    - "Grizzy   : \nBut ever since the corporation came along, I was no longer needed"
+    - "Grizzy   : \nWe used to live in harmony with the forest, planting trees for
       every one we cut down"
-    - "Grizzly :  \nBut the corporation simply doesn\u2019t care and now the forest
+    - "Grizzy   : \nBut the corporation simply doesn\u2019t care and now the forest
       is almost completely gone"
     - "Player:  \nI will stop them"

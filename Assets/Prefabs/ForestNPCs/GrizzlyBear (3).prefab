@@ -123,11 +123,11 @@ MonoBehaviour:
     name: 
     sentences:
     - "Player:    \nAre you lost?"
-    - "Grizzly :  \n No way, I\u2019m going to beat up the bad people in the factory
+    - "Grizzy   : \n No way, I\u2019m going to beat up the bad people in the factory
       and stop climate change"
     - "Player:    \nIt\u2019s dangerous here, your parents are very worried about
       you."
-    - "Grizzly :  \nThe monsters are actually quite weak since this is the starting
+    - "Grizzy   : \nThe monsters are actually quite weak since this is the starting
       area"
-    - "Grizzly :  \nBut I guess I should go home if my parents are worried."
+    - "Grizzy   : \nBut I guess I should go home if my parents are worried."
     - "Player:    \nCome on I\u2019ll lead you back"
