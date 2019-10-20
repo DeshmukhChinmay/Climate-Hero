@@ -27,6 +27,10 @@ public class SwordDamage : MonoBehaviour
                 Destroy(collision.gameObject);
                 Scores.increaseEnemiesDefeated();
             }
+        } else if (collision.gameObject.tag == "Boss")
+        {
+            GetComponent<AudioSource>().Play();
+            collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
         }
     }
 }

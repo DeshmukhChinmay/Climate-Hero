@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/6.Factory.unity
     guid: 47c2997731ff33f478c9d4ee5831b0d6
   - enabled: 1
+    path: Assets/Scenes/Test Scenes/VictoryScene.unity
+    guid: e07e316f751107d4f9489ba1e722baea
+  - enabled: 1
     path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/0.2.DesertVictoryScene
       .unity
     guid: 0d0cfb58210e043c8a009b2f22e1695e

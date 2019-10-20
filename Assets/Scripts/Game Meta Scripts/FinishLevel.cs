@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    public GameObject boss;
 
     // Update is called once per frame
     void Update()
     {
+
         if(GetComponent<EnemyHP>().GetHealth <= 1){
             if (GetComponent<EnemyHP>().tag == "CoalPlant"){
                 SceneManager.LoadScene("0.2.ForestVictoryScene");
