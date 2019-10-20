@@ -24,8 +24,8 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 
 ## Controls
 WASD/Arrow keys to move.  
-Ctrl/Left mouse click to attack.  
-Tab to talk to NPC(cats).  
+Left mouse click to attack.  
+E to talk to NPC (bears).  
 ESC to pause.  
 
 ## Other Info
