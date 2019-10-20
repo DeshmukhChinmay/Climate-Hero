@@ -13,14 +13,14 @@ public class FinishLevel : MonoBehaviour
     {
 
         if(GetComponent<EnemyHP>().GetHealth <= 1){
-            if (boss.name == "Factory")
-            {
-                SceneManager.LoadScene("0.2.VictoryScene");
+            if (GetComponent<EnemyHP>().tag == "CoalPlant"){
+                SceneManager.LoadScene("0.2.ForestVictoryScene");
             }
-            if (boss.name == "OilPlant")
+            if(GetComponent<EnemyHP>().tag == "OilFactory")
             {
-                SceneManager.LoadScene("0.2.VictoryScene");
+                SceneManager.LoadScene("0.2.DesertVictoryScene");
             }
         }
+        
     }
 }
