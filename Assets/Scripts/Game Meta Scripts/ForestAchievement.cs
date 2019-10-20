@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Achievement : MonoBehaviour
+public class ForestAchievement : MonoBehaviour
 {
     public int numOfStars = 1;
     [SerializeField] Sprite star;
     private List<StarImage> starList;
-    private Achievement a;
+    private ForestAchievement a;
 
     private void Awake()
     {
@@ -27,11 +27,11 @@ public class Achievement : MonoBehaviour
         int enemies = Scores.enemiesDefeated;
         int sideQuest = Scores.seedCollected;
 
-                if (enemies > 7)
+                if (enemies > 5)
                 {
                     numOfStars++;
                 }
-                if (ForestQuestScript.checkStatus())
+                if (sideQuest>3)
                 {
                     numOfStars++;
                 }
@@ -87,8 +87,8 @@ public class Achievement : MonoBehaviour
     public class StarImage
     {
         private Image starImage;
-        private Achievement stars;
-        public StarImage(Achievement a, Image image)
+        private ForestAchievement stars;
+        public StarImage(ForestAchievement a, Image image)
         {
             starImage = image;
             stars = a;
