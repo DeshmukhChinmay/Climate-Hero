@@ -9,6 +9,7 @@ TagManager:
   - SmokeEnemy
   - Boss
   - CoalPlant
+  - OilPlant
   layers:
   - Default
   - TransparentFX

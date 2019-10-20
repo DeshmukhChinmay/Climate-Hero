@@ -14,11 +14,11 @@ public class FinishLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GetComponent<EnemyHP>().GetHealth <= 1){
+        if(GetComponent<EnemyHP>().GetHealth <= 0){
             if (GetComponent<EnemyHP>().tag == "CoalPlant"){
                 SceneManager.LoadScene("0.2.ForestVictoryScene");
             }
-            if(GetComponent<EnemyHP>().tag == "OilFactory")
+            if(GetComponent<EnemyHP>().tag == "OilPlant")
             {
                 SceneManager.LoadScene("0.2.DesertVictoryScene");
             }

@@ -9,7 +9,7 @@ public class SwordDamage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CoalPlant"|| collision.gameObject.tag == "OilFactory")
+        if (collision.gameObject.tag == "Enemy")
         {
             GetComponent<AudioSource>().Play();
             collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
@@ -27,7 +27,7 @@ public class SwordDamage : MonoBehaviour
                 Destroy(collision.gameObject);
                 Scores.increaseEnemiesDefeated();
             }
-        } else if (collision.gameObject.tag == "Boss")
+        } else if (collision.gameObject.tag == "CoalPlant" || collision.gameObject.tag == "OilPlant")
         {
             GetComponent<AudioSource>().Play();
             collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
