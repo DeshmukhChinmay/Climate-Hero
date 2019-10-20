@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DO NOT CHANGE FINAL IMPLEMENTATION UNLESS YOU HAVE PERMISSION/4.Desert.unity
     guid: 5c870012cd8fb2e42996755f768fef86
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/VictoryScene.unity
+    guid: e07e316f751107d4f9489ba1e722baea
   m_configObjects: {}
