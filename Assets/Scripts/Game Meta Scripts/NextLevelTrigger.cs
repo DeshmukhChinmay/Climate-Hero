@@ -5,11 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevelTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject trigger;
 
     // Update is called once per frame
     void Update()
@@ -19,7 +15,15 @@ public class NextLevelTrigger : MonoBehaviour
         for (int i = 0; i < colliders.Length; i++) {
             //Debug.Log("There are some colliders detected");
             if (colliders[i].tag == "Player") {
-                SceneManager.LoadScene("2.ForestFinal");
+                if (trigger.name == "ForestLevelTrigger"){
+                    SceneManager.LoadScene("2.ForestFinal");
+                }
+                if (trigger.name == "DesertLevelTrigger"){
+                    SceneManager.LoadScene("4.Desert");
+                }
+                if (trigger.name == "FinalLevelTrigger"){
+                    SceneManager.LoadScene("6.Factory");
+                }
             }
         }
     }
