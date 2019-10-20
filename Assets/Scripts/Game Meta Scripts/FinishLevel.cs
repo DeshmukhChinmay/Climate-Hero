@@ -15,7 +15,10 @@ public class FinishLevel : MonoBehaviour
     void Update()
     {
         if(GetComponent<EnemyHP>().GetHealth <= 1){
-            SceneManager.LoadScene("0.2.VictoryScene");
+            if (GetComponent<EnemyHP>().tag == "CoalPlant"){
+                SceneManager.LoadScene("0.2.VictoryScene");
+            }
+            
         }
     }
 }

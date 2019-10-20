@@ -27,11 +27,11 @@ public class Achievement : MonoBehaviour
         int enemies = Scores.enemiesDefeated;
         int sideQuest = Scores.seedCollected;
 
-                if (enemies > 18)
+                if (enemies > 7)
                 {
                     numOfStars++;
                 }
-                if (sideQuest > 8)
+                if (ForestQuestScript.checkStatus())
                 {
                     numOfStars++;
                 }
