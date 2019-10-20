@@ -6,16 +6,21 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    public GameObject boss;
 
     // Update is called once per frame
     void Update()
     {
+
         if(GetComponent<EnemyHP>().GetHealth <= 1){
-            SceneManager.LoadScene("0.2.VictoryScene");
+            if (boss.name == "Factory")
+            {
+                SceneManager.LoadScene("0.2.VictoryScene");
+            }
+            if (boss.name == "OilPlant")
+            {
+                SceneManager.LoadScene("0.2.VictoryScene");
+            }
         }
     }
 }
