@@ -20391,6 +20391,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.18414569
       objectReference: {fileID: 0}
+    - target: {fileID: 6667754447938452233, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: mapName
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 7883654485256720634, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: movementSpeed
@@ -57248,6 +57253,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a04095c9c40561b40b6f831aa8b36849, type: 3}
+--- !u!1 &1806199649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5394141636381094966, guid: ed07f0d2a19e64da2bb9c488dd110b69,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394141636824129367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1806199650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806199649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8b5516ac0ea7543be7ef5567665fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 15
+  health: 0
+  attactAmount: -1
 --- !u!1 &2132509661
 GameObject:
   m_ObjectHideFlags: 0
