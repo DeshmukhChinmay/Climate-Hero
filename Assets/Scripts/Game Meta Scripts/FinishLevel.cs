@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FinishLevel : MonoBehaviour
 {
-
+    public GameObject Victory;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,8 @@ public class FinishLevel : MonoBehaviour
             }
             if (GetComponent<EnemyHP>().tag == "Boss")
             {
-                SceneManager.LoadScene("0.3.BossVictory");
+                Victory.SetActive(true);
+                Time.timeScale = 0f;
             }
         }
         
