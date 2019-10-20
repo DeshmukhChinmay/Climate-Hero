@@ -9,7 +9,7 @@ public class SwordDamage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CoalPlant"|| collision.gameObject.tag == "OilFactory")
         {
             GetComponent<AudioSource>().Play();
             collision.GetComponent<EnemyHP>().ChangeHealth(-damage);
