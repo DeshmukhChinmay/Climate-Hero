@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7612658173210626853}
   - component: {fileID: 882420022846662545}
   m_Layer: 0
-  m_Name: SmokeAttackBoss
+  m_Name: SmokeAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
