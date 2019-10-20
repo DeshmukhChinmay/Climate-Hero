@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        // Check for Space key input
+        // Check for space key input
         if (Input.GetKeyUp(KeyCode.Space))
         {
             DisplayNextSentence();
