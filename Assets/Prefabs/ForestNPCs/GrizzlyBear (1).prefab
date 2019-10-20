@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4931847741757378998}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.08, y: -8.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -107,10 +107,10 @@ MonoBehaviour:
     sentences:
     - "Player:    \nHey what are you doing all the way out here, don\u2019t you know
       the forest is full of monsters caused by climate change."
-    - "Grizzly :  \nAh, young ones so full of energy."
-    - "Grizzly :  \nDon\u2019t mind this old taking in his last glances of greenery
+    - "Grizzy   : \nAh, young ones so full of energy."
+    - "Grizzy   : \nDon\u2019t mind this old taking in his last glances of greenery
       before climate change claims another part of the environment."
-    - "Grizzly :  \nBesides the monsters only attack those who have a strong desire
+    - "Grizzy   : \nBesides the monsters only attack those who have a strong desire
       to make a difference."
     - "Player:    \nOh, well take care then."
 --- !u!58 &8577096144441990143
