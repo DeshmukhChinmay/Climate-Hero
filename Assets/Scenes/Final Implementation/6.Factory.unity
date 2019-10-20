@@ -21779,6 +21779,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerIsometric
+      objectReference: {fileID: 0}
     - target: {fileID: 4841480790336338087, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21834,11 +21839,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerIsometric
-      objectReference: {fileID: 0}
     - target: {fileID: 7883654485256720635, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -21884,6 +21884,10 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 1997709189}
+    - target: {fileID: 190959906, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3df1d38a32efd45dfaacdbc0f4801b2d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
 --- !u!1 &1647316093
@@ -60872,6 +60876,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127054462216802619, guid: ed07f0d2a19e64da2bb9c488dd110b69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2130146985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127054462216802619, guid: ed07f0d2a19e64da2bb9c488dd110b69,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811371582959362673, guid: ed07f0d2a19e64da2bb9c488dd110b69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2130146985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811371582959362673, guid: ed07f0d2a19e64da2bb9c488dd110b69,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed07f0d2a19e64da2bb9c488dd110b69, type: 3}
