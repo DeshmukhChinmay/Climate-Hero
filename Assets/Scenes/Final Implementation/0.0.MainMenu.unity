@@ -4148,17 +4148,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1309559452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2acddde9a0234b34ea5ae2337816906d, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  forestQuest: {fileID: 498805863}
-  desertQuest: {fileID: 104091894}
-  forestQuestImage: {fileID: 18040103}
-  desertQuestImage: {fileID: 326133694}
-  forestQuestComplete: {fileID: 21300000, guid: 60892507c7b774af2886ba153904921b,
-    type: 3}
-  desertQuestComplete: {fileID: 21300000, guid: 01befe2135fc74481844ca182be8ae19,
-    type: 3}
 --- !u!1 &1383257505
 GameObject:
   m_ObjectHideFlags: 0
