@@ -5740,9 +5740,181 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
         type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.size
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
       propertyPath: npc
       value: 
       objectReference: {fileID: 295515029}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "Player:    \n\rSoon our entire town will go underwater.\nWhy are the
+        sea levels rising?\r Why is it warming up so much?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[17]
+      value: "Polar Bear: \nI know you have the potential to destroy those factories
+        and stop the harm that the MegaCorp is causing."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[18]
+      value: "Polar Bear: \nHere have my sword."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[19]
+      value: "Player:    \n*Sword Obtained*"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[20]
+      value: "Polar Bear: \nIt will help you on your journey to destroy the factories."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[21]
+      value: "Player:    \nThank you Mr. Polar Bear!\nI will put a stop to them.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[22]
+      value: "Player:    \nThank you Mr. Polar Bear!\nI will put a stop to them.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[23]
+      value: "Player:    \nThank you Mr. Polar Bear!\nI will put a stop to them.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[24]
+      value: "Player:    \nThank you Mr. Polar Bear!\nI will put a stop to them.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[17]
+      value: 
+      objectReference: {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[18]
+      value: 
+      objectReference: {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[20]
+      value: 
+      objectReference: {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[21]
+      value: 
+      objectReference: {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[22]
+      value: 
+      objectReference: {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[23]
+      value: 
+      objectReference: {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[24]
+      value: 
+      objectReference: {fileID: 21300000, guid: 585b8dafce04fd248ac40f8f7a5669b7,
+        type: 3}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "Polar Bear: \n:( The planet is warming up due to global warming.\r\nThe
+        Super Evil MegaCorp is causing harm to the environment due to its wrong doings.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Polar Bear: \nThey are cutting down forests and mining coal and oil
+        to use the wood and the oil as fuel sources for their plant.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: "Polar Bear: \nHarmful gases are then released as a bi-product of using
+        those fuels which are depleting the ozone layer which causes the planet to
+        warm up."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[10]
+      value: "Polar Bear: \nBut first, you should destroy the coal and the oil factories
+        which are present nearby. They are causing pollution and harm to their surrounding
+        areas.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[11]
+      value: "Polar Bear: \nThe coal factory is in a forest south from here. \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[12]
+      value: "Polar Bear: \nThe oil factory is in a desert if you follow the path
+        on the right."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[13]
+      value: "Polar Bear: \nHowever, due to the rising sea levels the path to the
+        desert has gone underwater."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[14]
+      value: "Polar Bear: \nMaybe you should go to the forest first and destroy the
+        coal factory.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[15]
+      value: "Polar Bear: \nBe cautious my child. The pollution from the factories
+        have caused some mutant creatures to spawn."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[16]
+      value: "Polar Bear: \nI tried destroying the factories. But the creatures were
+        too strong for me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708298797822193742, guid: d67cad5f25e169940a9f7fb0a67bb353,
+        type: 3}
+      propertyPath: dialogue.avatars.Array.data[16]
+      value: 
+      objectReference: {fileID: 7935234321397735378, guid: 69dddfc74b9a3ba4f90fa35b48282535,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d67cad5f25e169940a9f7fb0a67bb353, type: 3}
 --- !u!95 &295515029 stripped
@@ -6721,6 +6893,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4841480791730514030, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3488f3cb7cce5144bb5aeb71b111f560, type: 2}
     - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_Name
@@ -6982,11 +7159,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4841480791730514030, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3488f3cb7cce5144bb5aeb71b111f560, type: 2}
     - target: {fileID: 8458521017556654435, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_SortingOrder
@@ -7475,20 +7647,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8422213676754690966, guid: a715e6498a8f8444e8af75aa518ea006,
+    - target: {fileID: 886031103182508492, guid: a715e6498a8f8444e8af75aa518ea006,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: orthographic size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1343731013812197621, guid: a715e6498a8f8444e8af75aa518ea006,
         type: 3}
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 347719873}
-    - target: {fileID: 886031103182508492, guid: a715e6498a8f8444e8af75aa518ea006,
+    - target: {fileID: 8422213676754690966, guid: a715e6498a8f8444e8af75aa518ea006,
         type: 3}
-      propertyPath: orthographic size
-      value: 5
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a715e6498a8f8444e8af75aa518ea006, type: 3}
