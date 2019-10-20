@@ -6720,21 +6720,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerIsometric
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4841480790336338087, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6790,6 +6775,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerIsometric
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_Radius
+      value: 0.22887097
+      objectReference: {fileID: 0}
+    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.22681257
+      objectReference: {fileID: 0}
+    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3247546
+      objectReference: {fileID: 0}
     - target: {fileID: 1357988463674130879, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_Layer
@@ -6824,22 +6840,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: m_Radius
-      value: 0.22887097
-      objectReference: {fileID: 0}
-    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.22681257
-      objectReference: {fileID: 0}
-    - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.3247546
       objectReference: {fileID: 0}
     - target: {fileID: 4841480790451728305, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
