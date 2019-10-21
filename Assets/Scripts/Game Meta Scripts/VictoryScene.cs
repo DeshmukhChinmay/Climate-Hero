@@ -8,14 +8,13 @@ using TMPro;
 public class VictoryScene : MonoBehaviour
 {
 
-    [SerializeField] TMP_Text time, damage, enemies;
+    [SerializeField] TMP_Text time, enemies;
   
     void Start()
     {
         Scores.Stop();
         int Time = (int)Scores.timer;
         time.text = Time.ToString () + "s";
-        damage.text = Scores.damageTaken.ToString ();
         enemies.text = Scores.enemiesDefeated.ToString ();
 
 
