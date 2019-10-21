@@ -17,6 +17,6 @@ public class SeedScript : MonoBehaviour
         Scores.increaseSeedCollect();
     }
     void Update(){
-        count.text = ForestQuestScript.completedObjectives + "/10 sseeds collected";
+        count.text = ForestQuestScript.completedObjectives + "/10 seeds collected";
     }
 }
