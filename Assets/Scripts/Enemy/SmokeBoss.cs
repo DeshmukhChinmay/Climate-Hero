@@ -23,14 +23,6 @@ public class SmokeBoss : MonoBehaviour
         rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
         Destroy(gameObject, 3f);
 
-        // Vector3 playerPos = new Vector3(player.position.x, player.position.y +1, player.position.z);
-
-        // transform.rotation = Quaternion.LookRotation(playerPos);
-        // transform.LookAt(player.position);   
-    }
-
-    void Update() {
-        // transform.position += transform.forward * speed * Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D collision) {

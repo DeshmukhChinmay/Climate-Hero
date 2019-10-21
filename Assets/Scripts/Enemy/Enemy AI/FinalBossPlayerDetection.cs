@@ -46,19 +46,6 @@ public class FinalBossPlayerDetection : MonoBehaviour
 
         Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
 
-        // fireWaitTime -= Time.deltaTime;
-
-        // if (firstShot == true) {
-        //     Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
-        //     firstShot = false;
-        // } else if (fireWaitTime <= 0) {
-
-        //     fireWaitTime = 0.5f;
-
-        //     Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
-        // }
-
-        // Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
     }
 
     void Dash() {
@@ -68,28 +55,14 @@ public class FinalBossPlayerDetection : MonoBehaviour
         if (moveWaitTime <= 0) {
             moveWaitTime = 5f;
 
-            //Debug.Log("Dash is getting called!!!");
-
             rigidBody = GetComponent<Rigidbody2D>();
 
             this.player = GameObject.FindWithTag("Player").transform;
-
-            // float movementDistance = speed * Time.deltaTime;
-            // transform.position += (player.transform.position - transform.position).normalized * speed * Time.deltaTime;
 
             moveDirection = (player.transform.position - transform.position).normalized * speed;
             rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
 
         }
 
-        // Debug.Log("Dash is getting called!!!");
-
-        // rigidBody = GetComponent<Rigidbody2D>();
-
-        // this.player = GameObject.FindWithTag("Player").transform;
-
-        // moveDirection = (player.transform.position - transform.position).normalized * speed;
-        // rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        
     }
 }

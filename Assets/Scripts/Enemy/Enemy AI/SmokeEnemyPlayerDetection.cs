@@ -48,6 +48,5 @@ public class SmokeEnemyPlayerDetection : MonoBehaviour
             Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
         }
 
-        // Instantiate(smokeAttack, firePoint.position, firePoint.rotation);
     }
 }

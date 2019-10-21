@@ -46,39 +46,11 @@ public class OilEnemyPlayerDetection : MonoBehaviour
 
             this.player = GameObject.FindWithTag("Player").transform;
 
-            // float movementDistance = speed * Time.deltaTime;
-            // transform.position += (player.transform.position - transform.position).normalized * speed * Time.deltaTime;
-
             moveDirection = (player.transform.position - transform.position).normalized * speed;
             rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
 
         }
-
-        // Debug.Log("Dash is getting called!!!");
-
-        // rigidBody = GetComponent<Rigidbody2D>();
-
-        // this.player = GameObject.FindWithTag("Player").transform;
-
-        // moveDirection = (player.transform.position - transform.position).normalized * speed;
-        // rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
         
     }
-
-    // void Move() {
-        
-    //     waitTime -= Time.deltaTime;
-
-    //     if (waitTime <= 0) {
-    //         waitTime = 0.5f;
-
-    //         rigidBody = GetComponent<Rigidbody2D>();
-
-    //         Vector3 target 
-
-    //         moveDirection = (player.transform.position - transform.position).normalized * speed;
-    //         rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
-    //     }
-
-    // }
+    
 }
