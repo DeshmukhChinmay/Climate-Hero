@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550fd69d9375ed046816fb23f075c30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackAmount: -1
+  attackAmount: -2
 --- !u!114 &3879622741659369329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee68c3a5271d942b4b7dc4a9622d08fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidBody: {fileID: 0}
