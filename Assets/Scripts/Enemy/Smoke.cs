@@ -27,16 +27,16 @@ public class Smoke : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag.Equals("Player")) {
-            Debug.Log("Player Hit!");
+            //Debug.Log("Player Hit!");
             PlayerHP playerHP = collision.GetComponentInChildren<PlayerHP>();
             
             if (playerHP != null) {
                 if (playerHP.GetHealth >0) {
                 playerHP.ChangeHealth(-1);
-                Debug.Log("Player HP changed");
+                //Debug.Log("Player HP changed");
                 }
             } else {
-                Debug.Log("The player HP is null!!");
+                //Debug.Log("The player HP is null!!");
             }
 
             Destroy(gameObject);

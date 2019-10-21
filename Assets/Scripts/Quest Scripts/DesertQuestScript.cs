@@ -9,7 +9,7 @@ public sealed class DesertQuestScript : MonoBehaviour
     // Start is called before the first frame update
     public static void completeObjective(){
         completedObjectives += 1;
-        Debug.Log(completedObjectives);
+        //Debug.Log(completedObjectives);
     }
 
     public static bool checkStatus(){

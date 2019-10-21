@@ -60,7 +60,7 @@ public class ForestAchievement : MonoBehaviour
         go.transform.localPosition = Vector3.zero;
 
         go.transform.GetComponent<RectTransform>().anchoredPosition = anchorPosit;
-        go.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(100, 100);
+        go.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(150, 180);
 
         Image starImageUI = go.GetComponent<Image>();
         starImageUI.sprite = star;
