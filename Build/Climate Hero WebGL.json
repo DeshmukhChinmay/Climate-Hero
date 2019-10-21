@@ -5,6 +5,7 @@
 "dataUrl": "Climate Hero WebGL.data.unityweb",
 "wasmCodeUrl": "Climate Hero WebGL.wasm.code.unityweb",
 "wasmFrameworkUrl": "Climate Hero WebGL.wasm.framework.unityweb",
+"wasmSymbolsUrl": "Climate Hero WebGL.wasm.symbols.unityweb",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
