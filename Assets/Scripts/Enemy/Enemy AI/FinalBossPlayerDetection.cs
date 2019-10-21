@@ -53,7 +53,7 @@ public class FinalBossPlayerDetection : MonoBehaviour
         moveWaitTime -= Time.deltaTime;
 
         if (moveWaitTime <= 0) {
-            moveWaitTime = 5f;
+            moveWaitTime = 3f;
 
             rigidBody = GetComponent<Rigidbody2D>();
 
