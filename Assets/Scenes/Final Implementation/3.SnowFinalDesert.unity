@@ -73837,21 +73837,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+    - target: {fileID: 4841480791730514030, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
-      propertyPath: m_Name
-      value: PlayerIsometric
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3488f3cb7cce5144bb5aeb71b111f560, type: 2}
     - target: {fileID: 4841480790336338087, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73907,20 +73897,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerIsometric
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7883654485256720635, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7883654485256720635, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: 0
+      value: 2130146985
       objectReference: {fileID: 0}
     - target: {fileID: 7883654485256720635, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
       propertyPath: m_Enabled
@@ -73930,10 +73935,6 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 190959906, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f259f1847f234714a71192ad6544268, type: 3}
     - target: {fileID: 4841480790451728305, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_Layer
@@ -74064,11 +74065,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4841480791730514030, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3488f3cb7cce5144bb5aeb71b111f560, type: 2}
     - target: {fileID: 1357988463674130879, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_Layer
@@ -74104,6 +74100,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 190959906, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f259f1847f234714a71192ad6544268, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
