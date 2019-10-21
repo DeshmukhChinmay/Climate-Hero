@@ -13,8 +13,9 @@ public class VictoryScene : MonoBehaviour
     void Start()
     {
         Scores.Stop();
-        int Time = (int)Scores.timer;
-        time.text = Time.ToString () + "s";
+        string minutes = Timer.endMinutes;
+        string seconds = Timer.endSeconds;
+        time.text = minutes + ":" + seconds;
         enemies.text = Scores.enemiesDefeated.ToString ();
 
 

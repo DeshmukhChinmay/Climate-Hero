@@ -4,14 +4,15 @@ using UnityEngine;
 
 public sealed class Scores : MonoBehaviour
 {
-    public static float timer;
+    public static float minutes;
+    public static float seconds;
     public static int enemiesDefeated, damageTaken;
     public static int seedCollected;
     static bool stopTimer;
     // Start is called before the first frame update
     void Start()
     {
-        timer = 0f;
+        minutes = 0f;
         enemiesDefeated = 0;
         damageTaken = 0;
         seedCollected = 0;
@@ -21,10 +22,7 @@ public sealed class Scores : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!stopTimer){
-            timer += 1 * Time.deltaTime;
-            //print(timer);
-        }
+        //minutes = Timer.endMinutes;
     }
 
     public static void Stop(){
