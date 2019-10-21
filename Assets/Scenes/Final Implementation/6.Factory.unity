@@ -19504,7 +19504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: {fileID: 856077941}
-  damage: {fileID: 1083164050}
   enemies: {fileID: 1586100425}
 --- !u!114 &913596331
 MonoBehaviour:
@@ -21779,6 +21778,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerIsometric
+      objectReference: {fileID: 0}
     - target: {fileID: 4841480790336338087, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21834,19 +21838,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841480790336338082, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerIsometric
-      objectReference: {fileID: 0}
-    - target: {fileID: 512935613, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: hearts
-      value: 
-      objectReference: {fileID: 2135670261}
-    - target: {fileID: 512935614, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: timerText
-      value: 
-      objectReference: {fileID: 1997709189}
     - target: {fileID: 7883654485256720635, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -21861,11 +21852,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883654485256720634, guid: 216169f7917c517468d8a5d0db8bdc47,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 936846900, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
       propertyPath: m_IsTrigger
@@ -21883,15 +21869,28 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.18414569
       objectReference: {fileID: 0}
-    - target: {fileID: 190959906, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3df1d38a32efd45dfaacdbc0f4801b2d, type: 3}
     - target: {fileID: 6667754447938452233, guid: 216169f7917c517468d8a5d0db8bdc47,
         type: 3}
       propertyPath: mapName
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 7883654485256720634, guid: 216169f7917c517468d8a5d0db8bdc47,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 512935614, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1997709189}
+    - target: {fileID: 190959906, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3df1d38a32efd45dfaacdbc0f4801b2d, type: 3}
+    - target: {fileID: 512935613, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
+      propertyPath: hearts
+      value: 
+      objectReference: {fileID: 2135670261}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 216169f7917c517468d8a5d0db8bdc47, type: 3}
 --- !u!1 &1647316093
@@ -60880,6 +60879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394141636381094962, guid: ed07f0d2a19e64da2bb9c488dd110b69,
+        type: 3}
+      propertyPath: m_Mass
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3127054462216802619, guid: ed07f0d2a19e64da2bb9c488dd110b69,
         type: 3}
