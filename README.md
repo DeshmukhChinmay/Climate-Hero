@@ -11,9 +11,9 @@ Project 2 for SOFTENG 306. Team 9. This project is about building a serious game
 - Terence Qu
 
 ## Execution Instructions (for Windows)
-1. Clone or download the PROTOTYPE branch of the repository to your local machine
-2. Make sure the ClimateQuest folder contains ClimateQuest_Data and ClimateQuest.exe
-3. Run the ClimateQuest.exe file
+1. Clone or download the master branch of the repository to your local machine
+2. Make sure the ClimateHero folder contains ClimateHero_Data and ClimateHero.exe
+3. Run the ClimateHero.exe file
 
 ## Opening in Unity
 1. Clone or download the repository
