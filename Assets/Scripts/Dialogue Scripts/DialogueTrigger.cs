@@ -24,16 +24,13 @@ public class DialogueTrigger : MonoBehaviour
 
             if (colliders[i].tag == "Player")
             {
-
                 IsLeft = false;
                 //npc.SetBool("IsPlayerComing", true);
-
             }
 
 
             if (Input.GetKeyUp(KeyCode.E) && colliders[i].tag == "Player")
             {
-
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             }
         }
@@ -43,6 +40,5 @@ public class DialogueTrigger : MonoBehaviour
             FindObjectOfType<DialogueManager>().EndDialogue();
             //npc.SetBool("IsPlayerComing", false);
         }
-
     }
 }

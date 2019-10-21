@@ -14,7 +14,7 @@ public class FoodSpawner : MonoBehaviour
     void Start()
     {
 
-        Debug.Log("This is getting run!!!!!!!!!!");
+        //Debug.Log("This is getting run!!!!!!!!!!");
 
         var values = new List<int>();
 

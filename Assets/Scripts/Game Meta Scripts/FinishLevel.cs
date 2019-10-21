@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour
 {
     public GameObject Victory;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
