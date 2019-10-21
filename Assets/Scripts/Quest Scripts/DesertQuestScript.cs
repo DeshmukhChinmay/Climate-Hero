@@ -13,7 +13,7 @@ public sealed class DesertQuestScript : MonoBehaviour
     }
 
     public static bool checkStatus(){
-        if(totalObjectives == completedObjectives){
+        if(totalObjectives <= completedObjectives){
             return true;
         }
         return false;
